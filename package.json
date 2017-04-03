@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest app/",
-    "storybook": "storybook start -p 7007"
+    "storybook": "storybook start -p 7007",
+    "storyshots": "storyshots"
   },
   "babel": {
     "presets": [
@@ -35,7 +36,8 @@
     "redux-actions": "^2.0.1",
     "redux-saga": "^0.14.4",
     "remote-redux-devtools": "^0.5.7",
-    "storybook": "^0.0.0"
+    "storybook": "^0.0.0",
+    "storyshots": "^3.2.2"
   },
   "devDependencies": {
     "@kadira/react-native-storybook": "^2.0.0",
