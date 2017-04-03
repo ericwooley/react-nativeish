@@ -1,0 +1,47 @@
+{
+  "name": "reactNativeReduxStarterKit",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest app/"
+  },
+  "babel": {
+    "presets": [
+      "react-native"
+    ],
+    "plugins": [
+      "transform-regenerator"
+    ]
+  },
+  "jest": {
+    "preset": "jest-react-native",
+    "setupFiles": [
+      "./test_config/setup.js"
+    ],
+    "globals": {
+      "__DEV__": true
+    }
+  },
+  "dependencies": {
+    "axios": "^0.16.0",
+    "enzyme": "^2.8.0",
+    "jest-react-native": "^18.0.0",
+    "react": "~15.4.1",
+    "react-native": "0.42.3",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-actions": "^2.0.1",
+    "redux-saga": "^0.14.4",
+    "remote-redux-devtools": "^0.5.7"
+  },
+  "devDependencies": {
+    "babel-jest": "19.0.0",
+    "babel-plugin-transform-regenerator": "^6.22.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "19.0.2",
+    "react-native-mock": "^0.3.1",
+    "react-test-renderer": "~15.4.1"
+  }
+}
