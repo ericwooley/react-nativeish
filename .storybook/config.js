@@ -1,7 +1,8 @@
-import { configure } from '@kadira/storybook';
+import { configure } from '@kadira/storybook'
 
-function loadStories() {
-  require('../app/stories');
+console.log('using web')
+function loadStories () {
+  require('../src/stories')
 }
 
-configure(loadStories, module);
+configure(loadStories, module)
