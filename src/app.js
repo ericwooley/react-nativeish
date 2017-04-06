@@ -11,9 +11,9 @@ export default function App (props) {
       <View>
         <Text>Test</Text>
         <Text>Test</Text>
+        <Text>Test2</Text>
         <Text>Test</Text>
         <Text>Test</Text>
-        <Text>Test 5</Text>
       </View>
     </Provider>
   )

@@ -10,4 +10,3 @@ import {AppRegistry} from 'react-native'
 
 const reactNativeReduxStarterKit = () => <App />
 AppRegistry.registerComponent('reactNativeReduxStarterKit', () => reactNativeReduxStarterKit)
-AppRegistry.runApplication('MyApp', { rootTag: document.getElementById('root') })
