@@ -4,7 +4,6 @@ React Native Web Redux Starter Kit
 ## Quick Links
 1. [Dependencies](#Dependencies) √ 
 3. [Onboarding](#Onboarding) √* 
-2. [Libraries](#Libraries) √
 3. [Development](#Developing) √*
 4. [Deployment](#Deployment) ¬
 5. [Blueprints](#Blueprints) ¬
@@ -42,9 +41,9 @@ Take a quick look at the directory structure. (explanations follow)
 │   │   ├── index.js                                  # exports all components
 │   │   └── <component name>                          # root folder for component
 │   │       ├── __tests__                             # component test folder
-│   │       │   └── <component name>.test.js          # component test file
-│   │       ├── <component name>.js                   # component file
-│   │       └── <component name>.story.js             # component story file
+│   │       │   └── <component name>Component.test.js          # component test file
+│   │       ├── <component name>Component.js                   # component file
+│   │       └── <component name>Component.story.js             # component story file
 │   ├── redux                                         # Redux files
 │   │   ├── reducers                                  # redux reducers
 │   │   │   ├── __tests__                             # tests for reducers
@@ -54,7 +53,7 @@ Take a quick look at the directory structure. (explanations follow)
 │   │   │   ├── index.js                              # exports all saga files.
 │   │   │   └── <saga name>                           # Saga container
 │   │   │       ├── __tests__
-│   │   │       │   └── <saga name>.test.js           # Saga test file
+│   │   │       │   └── <saga name>Saga.test.js           # Saga test file
 │   │   │       └── <saga name>Saga.js                # Saga
 │   │   └── store.js                                  # creates and configures the redux store
 │   ├── scenes                                        # Scenes (maps to routes, similar to views)
@@ -68,18 +67,42 @@ Take a quick look at the directory structure. (explanations follow)
 └── yarn.lock                                         # Locks all libraries in place. 
 ```
 * Components
-  TODO
+  Components are like the View in MVC. It should only accept props, and output JSX, with generalized callback props (onClick, onHover, onSomethingCustom, etc...)
+  
+  * Example: 
+    ```js
+    // TODO
+    ```
+
   1. Stories
-  TODO
+  Stories are react storybook stories, and are effectively documentation for the components. 
+    
+    * run `yarn storybook:web` and open [http://localhost:9001/](http://localhost:9001/) to open the storybook ui
+    
+    * run `yarn storybook:web` and open [http://localhost:7007/](http://localhost:7007/) and open the app to get the stories in the simulator
+
+    * Example: 
+    ```js
+    // TODO
+    ```
   2. StoyShots
-  TODO
+  Storyshots convert storybook stories to jest snapshots. So that when you run unit tests, it checks the underylying dom elements havn't changed.
+  
 * Containers (Smart Components)
-  TODO
+  Containers are components that use redux-connect to map a components props to redux state and actions. 
+  * Example: 
+    ```js
+    // TODO
+    ```
+    
 * Scenes
-  TODO
-  
+  Scenes are components that are loaded via react native navigation. It should be composed entirely of smart components.
+  * Example: 
+    ```js
+    // TODO
+    ```
+
 * Redux
-  
   1. Reducers
   TODO
   
@@ -90,8 +113,9 @@ Take a quick look at the directory structure. (explanations follow)
   TODO
 
 
-Libraries
----------
+### Libraries
+Become familiar with each of these libraries.
+
 1. [React](https://facebook.github.io/react/)
   * [shouldComponentUpdate](https://facebook.github.io/react/docs/optimizing-performance.html#shouldcomponentupdate-in-action)
   * [Higher Order Components](https://facebook.github.io/react/docs/higher-order-components.html)
@@ -133,11 +157,11 @@ Development
 3. Development Workflow 
   * TODO
 
-Deployment
+Blueprints
 ----------
 TODO
 
-Blueprints
+Deployment
 ----------
 TODO
 
