@@ -17,15 +17,6 @@ export default function * watchStars () {
 
 export function * getStars (action) {
   try {
-      return fetch('https://facebook.github.io/react-native/movies.json')
-        .then((response) => response.json())
-        .then((responseJson) => {
-          return console.log(responseJson.movies)
-        })
-        .catch((error) => {
-          console.error(error)
-        })
-
     const repoInfo = yield call(axios.get, 'https://api.github.com/repos/redux-saga/redux-saga')
     yield put(actions.FETCH_STARS_SUCCESS(repoInfo.data.stargazers_count))
   } catch (error) {
