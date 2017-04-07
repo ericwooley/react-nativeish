@@ -38,7 +38,13 @@
     "extends": [
       "standard",
       "standard-react"
-    ]
+    ],
+    "plugins": [
+      "jest"
+    ],
+    "env": {
+      "jest/globals": true
+    }
   },
   "dependencies": {
     "axios": "^0.16.0",
@@ -59,23 +65,24 @@
     "babel-loader": "^6.2.5",
     "babel-plugin-transform-regenerator": "^6.22.0",
     "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react-native-stage-0": "^1.0.0",
     "babel-preset-react-native": "1.9.1",
+    "babel-preset-react-native-stage-0": "^1.0.0",
     "enzyme": "^2.8.0",
-    "eslint-config-standard-react": "^4.3.0",
+    "eslint": "^3.19.0",
     "eslint-config-standard": "^7.1.0",
+    "eslint-config-standard-react": "^4.3.0",
+    "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsx-a11y": "^2.2.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-standard": "^2.1.1",
-    "eslint": "^3.19.0",
-    "jest-react-native": "^18.0.0",
     "jest": "19.0.2",
+    "jest-react-native": "^18.0.0",
     "react-dom": "^15.4.2",
     "react-hot-loader": "2.0.0-alpha-4",
+    "react-native": "0.42.3",
     "react-native-mock": "^0.3.1",
     "react-native-web": "^0.0.81",
-    "react-native": "0.42.3",
     "react-navigation": "^1.0.0-beta.7",
     "react-redux": "^5.0.3",
     "react-test-renderer": "~15.4.1",
