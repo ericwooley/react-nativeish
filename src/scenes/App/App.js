@@ -2,13 +2,15 @@ import React from 'react'
 import {StyleSheet, Text, View, Image} from 'react-native'
 import { Provider } from 'react-redux'
 import {createReduxStore} from '../../redux/store'
-import { Touchable } from '../../components'
-const reduxStore = createReduxStore('Starter Kit')
-const App = () => {
+import { Stars, Touchable } from '../../components'
+
+const App = ({reactotron}) => {
+  const reduxStore = createReduxStore('Starter Kit', {reactotron})
   return (
     <Provider store={reduxStore}>
       <View style={styles.container}>
         <Image source={require('../../assets/react-native-web.png')} style={styles.logo} />
+        <Stars starCount={12} onPress={() => alert('pressed')} />
         <Touchable onPress={this._handlePress} style={styles.touchable}>
           <Text style={styles.welcome}>
             Welcome to React Native for Web Starter!
@@ -24,6 +26,10 @@ const App = () => {
       </View>
     </Provider>
   )
+}
+
+App.propTypes = {
+  reactotron: React.PropTypes.any.isRequired
 }
 export default App
 const styles = StyleSheet.create({
