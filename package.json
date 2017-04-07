@@ -15,7 +15,7 @@
     "storybook:web": "start-storybook -p 9001 -c web/.storybook",
     "test:storyshots": "storyshots",
     "test": "yarn test:jest",
-    "test:jest": "jest app/"
+    "test:jest": "jest src/"
   },
   "babel": {
     "presets": [
