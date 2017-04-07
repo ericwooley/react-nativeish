@@ -44,7 +44,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'react-native': 'react-native-web'
+      'react-native': 'react-native-web',
+      '@kadira/react-native-storybook': '@kadira/storybook'
     }
   }
 }

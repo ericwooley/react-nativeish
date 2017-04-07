@@ -11,10 +11,10 @@
     "dev:android": "react-native run-android",
     "dev:web": "webpack-dev-server --port 3000 --config web/webpack.config.dev.js --inline --hot --colors --quiet",
     "start": "yarn dev:ios",
-    "storybook:native": "storybook start -p 7007",
-    "storybook:web": "start-storybook start -p 9001 -c ./.storybook/",
+    "storybook:ios": "storybook start -p 7007",
+    "storybook:web": "start-storybook -p 9001 -c web/.storybook",
     "test:storyshots": "storyshots",
-    "test": "yarn test:jest && yarn test:storybook && yarn test:storyshots",
+    "test": "yarn test:jest",
     "test:jest": "jest app/"
   },
   "babel": {
