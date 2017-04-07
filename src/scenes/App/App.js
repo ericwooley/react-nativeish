@@ -4,8 +4,8 @@ import { Provider } from 'react-redux'
 import {createReduxStore} from '../../redux/store'
 import { Stars, Touchable } from '../../components'
 
-const App = ({reactotron}) => {
-  const reduxStore = createReduxStore('Starter Kit', {reactotron})
+const App = () => {
+  const reduxStore = createReduxStore('Starter Kit')
   return (
     <Provider store={reduxStore}>
       <View style={styles.container}>
@@ -29,7 +29,6 @@ const App = ({reactotron}) => {
 }
 
 App.propTypes = {
-  reactotron: React.PropTypes.any.isRequired
 }
 export default App
 const styles = StyleSheet.create({
