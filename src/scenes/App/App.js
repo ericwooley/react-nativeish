@@ -2,30 +2,32 @@ import React from 'react'
 import {StyleSheet, Text, View, Image} from 'react-native'
 import { Provider } from 'react-redux'
 import {createReduxStore} from '../../redux/store'
-import { Stars, Touchable } from '../../components'
-
-const App = () => {
-  const reduxStore = createReduxStore('Starter Kit')
-  return (
-    <Provider store={reduxStore}>
-      <View style={styles.container}>
-        <Image source={require('../../assets/react-native-web.png')} style={styles.logo} />
-        <Stars starCount={12} onPress={() => alert('pressed')} />
-        <Touchable onPress={this._handlePress} style={styles.touchable}>
-          <Text style={styles.welcome}>
-            Welcome to React Native for Web Starter!
-          </Text>
-          <Text style={styles.instructions}>
-            To get started, edit index.web.js
-          </Text>
-          <Text style={styles.instructions}>
-            Press Cmd+R to reload,
-            {'\n'} Alt+Cmd+I for dev menu
-          </Text>
-        </Touchable>
-      </View>
-    </Provider>
-  )
+import { Touchable } from '../../components'
+import Stars from '../../containers/stars/starsContainer'
+const reduxStore = createReduxStore('Starter Kit')
+class App extends React.Component {
+  render () {
+    return (
+      <Provider store={reduxStore}>
+        <View style={styles.container}>
+          <Image source={require('../../assets/react-native-web.png')} style={styles.logo} />
+          <Stars starCount={12} onPress={() => alert('pressed')} />
+          <Touchable onPress={this._handlePress} style={styles.touchable}>
+            <Text style={styles.welcome}>
+              Welcome to React Native for Web Starter!
+            </Text>
+            <Text style={styles.instructions}>
+              To get started, edit index.web.js
+            </Text>
+            <Text style={styles.instructions}>
+              Press Cmd+R to reload,
+              {'\n'} Alt+Cmd+I for dev menu
+            </Text>
+          </Touchable>
+        </View>
+      </Provider>
+    )
+  }
 }
 
 App.propTypes = {
