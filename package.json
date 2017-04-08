@@ -1,5 +1,5 @@
 {
-  "name": "react-native-redux-starter-kit",
+  "name": "reactnativereduxstarterkit",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -51,6 +51,7 @@
     "babel-polyfill": "^6.23.0",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.2",
+    "react-native-cli": "^2.0.1",
     "recompose": "^0.22.0",
     "redux": "^3.6.0",
     "redux-actions": "^2.0.1",
