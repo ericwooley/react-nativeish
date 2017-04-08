@@ -2,12 +2,14 @@ React Native Web Redux Starter Kit
 ==================================
 
 ## Quick Links
-1. [Dependencies](#Dependencies) √ 
-3. [Onboarding](#Onboarding) √* 
-3. [Development](#Developing) √*
-4. [Deployment](#Deployment) ¬
-5. [Blueprints](#Blueprints) ¬
-6. [References](#References) ¬
+1. [Dependencies](#dependencies) √ 
+3. [Onboarding](#onboarding) √* 
+  * [Libraries](#libraries)
+3. [Development](#developing) √*
+4. [Deployment](#deployment) ¬
+5. [Blueprints](#blueprints) ¬
+6. [References](#references) ¬
+7. [Notes](#notes)
 
 Dependencies
 ------------
@@ -89,7 +91,8 @@ Take a quick look at the directory structure. (explanations follow)
   Storyshots convert storybook stories to jest snapshots. So that when you run unit tests, it checks the underylying dom elements havn't changed.
   
 * Containers (Smart Components)
-  Containers are components that use redux-connect to map a components props to redux state and actions. 
+  Containers are components that use redux-connect to map a components props to redux state and actions.
+  For unit testing see [this blog post](http://www.wsbrunson.com/react/redux/test/2016/05/08/testing-redux-containers.html)
   * Example: 
     ```js
     // TODO
@@ -172,3 +175,7 @@ References
 TODO
 
 ![runs everywhere](./docs/assets/runs-everywhere.png)
+
+Notes
+-----
+Currently we are using react-native 0.41.x because 0.43.x depends on an [alpha version of react](https://github.com/facebook/react-native/issues/13314). Once that is resolved, we will upgrade to 0.43.x. 0.42.x is has some severe networking bugs.

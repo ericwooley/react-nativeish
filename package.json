@@ -13,9 +13,11 @@
     "start": "yarn dev:ios",
     "storybook:ios": "storybook start -p 7007",
     "storybook:web": "start-storybook -p 9001 -c web/.storybook",
-    "test:storyshots": "storyshots",
     "test": "yarn test:jest",
-    "test:jest": "jest src/"
+    "test:storybook": "storyshots -c web/.storybook --webpack",
+    "test:jest": "jest src/",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
   },
   "babel": {
     "presets": [
@@ -33,6 +35,9 @@
     "globals": {
       "__DEV__": true,
       "__TEST__": true
+    },
+    "moduleNameMapper": {
+      "@kadira/react-native-storybook": "@kadira/storybook"
     }
   },
   "eslintConfig": {
@@ -48,8 +53,15 @@
     }
   },
   "dependencies": {
+    "@kadira/react-native-storybook": "^2.3.0",
+    "@kadira/storyshots": "^2.1.0",
     "axios": "^0.16.0",
+    "babel-plugin-module-resolver": "^2.7.0",
     "babel-polyfill": "^6.23.0",
+    "font-awesome": "^4.7.0",
+    "font-awesome-webpack": "^0.0.5-beta.2",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
     "react": "^15.4.0",
     "react-native": "^0.41.0",
     "react-native-cli": "^2.0.1",
@@ -59,11 +71,11 @@
     "redux": "^3.6.0",
     "redux-actions": "^2.0.1",
     "redux-cli": "^1.9.0",
-    "redux-saga": "^0.14.4"
+    "redux-saga": "^0.14.4",
+    "storyshots": "^3.2.2"
   },
   "devDependencies": {
-    "@kadira/react-native-storybook": "^2.3.0",
-    "@kadira/storybook": "^2.35.3",
+    "@kadira/storybook": "^2.21.0",
     "babel-cli": "^6.14.0",
     "babel-core": "^6.14.0",
     "babel-eslint": "^6.1.2",
@@ -82,6 +94,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-standard": "^2.1.1",
+    "git-hooks": "^1.1.8",
     "jest": "19.0.2",
     "jest-react-native": "^18.0.0",
     "react-dom": "^15.4.2",
@@ -93,8 +106,7 @@
     "react-test-renderer": "~15.4.1",
     "redux-devtools-extension": "^2.13.0",
     "remote-redux-devtools": "^0.5.7",
-    "storybook": "^0.0.0",
-    "storyshots": "^3.2.2",
+    "shelljs": "^0.7.7",
     "string": "^3.3.3",
     "webpack": "1.13.2",
     "webpack-dev-server": "1.14.1"

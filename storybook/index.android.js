@@ -7,4 +7,4 @@ configure(() => {
 }, module)
 
 const StorybookUI = getStorybookUI({port: 7007, host: 'localhost'})
-AppRegistry.registerComponent('reactNativeReduxStarterKit', () => StorybookUI)
+AppRegistry.registerComponent('reactnativereduxstarterkit', () => StorybookUI)

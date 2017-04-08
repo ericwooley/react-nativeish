@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Image } from 'react-native'
+import { StyleSheet, View, Image, Text } from 'react-native'
 import { Provider } from 'react-redux'
 import { createReduxStore } from '../../redux/store'
 import Stars from '../../containers/stars/starsContainer'
@@ -10,7 +10,8 @@ class App extends React.Component {
     return (
       <Provider store={reduxStore}>
         <View style={styles.container}>
-          <Image source={require('../../assets/react-native-web.png')} style={{height: 73, width: 246}} />
+          <Image source={require('../../assets/universal-logo.png')} style={{height: 73, width: 246}} />
+          <Text>React Native Universal Web</Text>
           <Stars />
         </View>
       </Provider>

@@ -1,6 +1,5 @@
 import initStoryshots from 'storyshots'
 
-initStoryshots()
-it('should init storyshots', () => {
-  //
+initStoryshots({
+  configPath: 'web/.storybook'
 })
