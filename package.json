@@ -53,6 +53,7 @@
     "react-native": "0.43.2",
     "react-native-cli": "^2.0.1",
     "react-native-elements": "^0.10.3",
+    "react-native-vector-icons": "^4.0.1",
     "recompose": "^0.22.0",
     "redux": "^3.6.0",
     "redux-actions": "^2.0.1",

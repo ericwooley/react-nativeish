@@ -1,52 +1,60 @@
-'use strict';
+const path = require('path')
+const webpack = require('webpack')
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _path = require('path');
-
-var _path2 = _interopRequireDefault(_path);
-
-var _webpack = require('webpack');
-
-var _webpack2 = _interopRequireDefault(_webpack);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var managerEntry = process.env.DEV_BUILD ? _path2.default.resolve(__dirname, '../../src/client/manager') : _path2.default.resolve(__dirname, '../manager');
-
-var config = {
-  devtool: '#cheap-module-eval-source-map',
-  entry: {
-    manager: [managerEntry],
-    preview: [_path2.default.resolve(__dirname, './error_enhancements'), 'webpack-hot-middleware/client']
+module.exports = {
+  devServer: {
+    contentBase: path.join(__dirname, 'chrome-ext')
+  },
+  entry: [
+    path.join(__dirname, '../index.web.js')
+  ],
+  module: {
+    loaders: [
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loaders: [
+          'react-hot',
+          'babel-loader?cacheDirectory=true'
+        ]
+      },
+      {
+        // Most react-native libraries include uncompiled ES6 JS.
+        test: /\.js$/,
+        include: /node_modules\/react-native-/,
+        loader: 'babel-loader',
+        query: { cacheDirectory: true }
+      },
+      {
+        test: /\.(gif|jpe?g|png|svg)$/,
+        loader: 'url-loader',
+        query: { name: '[name].[hash:16].[ext]' }
+      },
+      {
+        test: /\.ttf$/,
+        loader: "file-loader", // or directly file-loader
+        include: path.resolve(__dirname, "../../node_modules/react-native-vector-icons"),
+      }
+    ]
   },
   output: {
-    path: _path2.default.join(__dirname, 'dist'),
-    filename: '[name].bundle.js',
-    publicPath: '/static/'
+    filename: 'bundle.js'
   },
-  plugins: [new _webpack2.default.optimize.OccurenceOrderPlugin(), new _webpack2.default.HotModuleReplacementPlugin()],
-  module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loader: 'babel',
-      query: { presets: ['react', 'es2015', 'stage-2'] },
-      exclude: [_path2.default.resolve('./node_modules'), _path2.default.resolve(__dirname, 'node_modules')],
-      include: [_path2.default.resolve('./'), __dirname, _path2.default.resolve(__dirname, '../../src')]
-    },{
-      test: /\.(gif|jpe?g|png|svg)$/,
-      loader: 'url-loader',
-      query: { name: '[name].[hash:16].[ext]' }
-    }]
-  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+    }),
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurenceOrderPlugin()
+  ],
   resolve: {
     alias: {
       'react-native': 'react-native-web',
       '@kadira/react-native-storybook': '@kadira/storybook'
     }
   }
-};
-
-module.exports = config;
+}

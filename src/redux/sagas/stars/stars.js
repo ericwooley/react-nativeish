@@ -17,7 +17,7 @@ export default function * watchStars () {
 
 export function * getStars (action) {
   try {
-    const repoInfo = yield call(axios.get, 'https://api.github.com/repos/redux-saga/redux-saga')
+    const repoInfo = yield call(axios.get, 'https://api.github.com/repos/ericwooley/react-native-redux-jest-starter-kit')
     yield put(actions.FETCH_STARS_SUCCESS(repoInfo.data.stargazers_count))
   } catch (error) {
     yield put(actions.FETCH_STARS_FAILURE(error))

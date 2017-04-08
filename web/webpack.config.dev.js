@@ -11,6 +11,10 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: [
@@ -21,7 +25,7 @@ module.exports = {
       {
         // Most react-native libraries include uncompiled ES6 JS.
         test: /\.js$/,
-        include: /node_modules\/react-native-/,
+        include: [/node_modules\/react-native-/, /node_modules\/react-native-vector-icons/],
         loader: 'babel-loader',
         query: { cacheDirectory: true }
       },
@@ -29,6 +33,11 @@ module.exports = {
         test: /\.(gif|jpe?g|png|svg)$/,
         loader: 'url-loader',
         query: { name: '[name].[hash:16].[ext]' }
+      },
+      {
+        test: /\.ttf$/,
+        loader: 'url-loader', // or directly file-loader
+        include: path.resolve(__dirname, '../node_modules/react-native-vector-icons')
       }
     ]
   },

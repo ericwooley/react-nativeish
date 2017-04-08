@@ -36,6 +36,17 @@
 		2DCD954D1E0B4F2C00145EB5 /* reactnativereduxstarterkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactnativereduxstarterkitTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A66435701E98834D007B93CF /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A664356F1E98834D007B93CF /* Entypo.ttf */; };
+		A664357B1E988362007B93CF /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435711E988362007B93CF /* Entypo.ttf */; };
+		A664357C1E988362007B93CF /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435721E988362007B93CF /* EvilIcons.ttf */; };
+		A664357D1E988362007B93CF /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435731E988362007B93CF /* FontAwesome.ttf */; };
+		A664357E1E988362007B93CF /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435741E988362007B93CF /* Foundation.ttf */; };
+		A664357F1E988362007B93CF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435751E988362007B93CF /* Ionicons.ttf */; };
+		A66435801E988362007B93CF /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435761E988362007B93CF /* MaterialCommunityIcons.ttf */; };
+		A66435811E988362007B93CF /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435771E988362007B93CF /* MaterialIcons.ttf */; };
+		A66435821E988362007B93CF /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435781E988362007B93CF /* Octicons.ttf */; };
+		A66435831E988362007B93CF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A66435791E988362007B93CF /* SimpleLineIcons.ttf */; };
+		A66435841E988362007B93CF /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A664357A1E988362007B93CF /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +266,17 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		A664356F1E98834D007B93CF /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = Fonts/Entypo.ttf; sourceTree = "<group>"; };
+		A66435711E988362007B93CF /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		A66435721E988362007B93CF /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		A66435731E988362007B93CF /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		A66435741E988362007B93CF /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		A66435751E988362007B93CF /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		A66435761E988362007B93CF /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		A66435771E988362007B93CF /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		A66435781E988362007B93CF /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		A66435791E988362007B93CF /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		A664357A1E988362007B93CF /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +413,17 @@
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				A664356F1E98834D007B93CF /* Entypo.ttf */,
+				A66435711E988362007B93CF /* Entypo.ttf */,
+				A66435721E988362007B93CF /* EvilIcons.ttf */,
+				A66435731E988362007B93CF /* FontAwesome.ttf */,
+				A66435741E988362007B93CF /* Foundation.ttf */,
+				A66435751E988362007B93CF /* Ionicons.ttf */,
+				A66435761E988362007B93CF /* MaterialCommunityIcons.ttf */,
+				A66435771E988362007B93CF /* MaterialIcons.ttf */,
+				A66435781E988362007B93CF /* Octicons.ttf */,
+				A66435791E988362007B93CF /* SimpleLineIcons.ttf */,
+				A664357A1E988362007B93CF /* Zocial.ttf */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -582,7 +615,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactnativereduxstarterkit" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactNativeReduxStarterKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -839,8 +872,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66435821E988362007B93CF /* Octicons.ttf in Resources */,
+				A66435701E98834D007B93CF /* Entypo.ttf in Resources */,
+				A664357E1E988362007B93CF /* Foundation.ttf in Resources */,
+				A66435811E988362007B93CF /* MaterialIcons.ttf in Resources */,
+				A66435841E988362007B93CF /* Zocial.ttf in Resources */,
+				A664357F1E988362007B93CF /* Ionicons.ttf in Resources */,
+				A66435831E988362007B93CF /* SimpleLineIcons.ttf in Resources */,
+				A664357B1E988362007B93CF /* Entypo.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A664357C1E988362007B93CF /* EvilIcons.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				A66435801E988362007B93CF /* MaterialCommunityIcons.ttf in Resources */,
+				A664357D1E988362007B93CF /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1236,7 +1280,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactnativereduxstarterkit" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactNativeReduxStarterKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

@@ -5793,6 +5793,13 @@ react-native-tab-view@^0.0.57:
   version "0.0.57"
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.57.tgz#715e2ea4100fa50168e134df3947dd76ebd55743"
 
+react-native-vector-icons@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-4.0.1.tgz#39c05d2e775deeb98d5afdbda5dcf67965ff674f"
+  dependencies:
+    lodash "^4.0.0"
+    yargs "^6.3.0"
+
 react-native-web@0.0.70:
   version "0.0.70"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.0.70.tgz#c57dcf4e503171989a623ffd2d13b76ad3d5ad51"
