@@ -1,0 +1,7 @@
+{
+  "sourceBase":"src",
+  "testBase":"",
+  "smartPath":"",
+  "dumbPath":"",
+  "fileCasing":"camelCase"
+}

@@ -131,7 +131,9 @@ Become familiar with each of these libraries.
   * This project also builds on this using [react-native-web](https://github.com/necolas/react-native-web)
     which is a reimplementation of react-native to make it run in a browser.
 
-5. [Native base](https://nativebase.io/) Basic semi-presytled components to make things more usuable.
+5. [react-native-elements](https://github.com/react-native-training/react-native-elements) Basic semi-presytled components to make things more usuable.
+  * [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons#installation) is installed, default setup only includes the font for font-awesome.
+  * [Find your icons here](http://fontawesome.io/icons/)
 
 6. [Recompose](https://github.com/acdlite/recompose) High Order components so that you can just use function based components
 
