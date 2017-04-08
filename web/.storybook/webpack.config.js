@@ -25,7 +25,7 @@ module.exports = {
       {
         // Most react-native libraries include uncompiled ES6 JS.
         test: /\.js$/,
-        include: /node_modules\/react-native-/,
+        include: [/node_modules\/react-native-/, /node_modules\/react-native-vector-icons/],
         loader: 'babel-loader',
         query: { cacheDirectory: true }
       },
@@ -36,8 +36,8 @@ module.exports = {
       },
       {
         test: /\.ttf$/,
-        loader: "file-loader", // or directly file-loader
-        include: path.resolve(__dirname, "../../node_modules/react-native-vector-icons"),
+        loader: 'url-loader', // or directly file-loader
+        include: path.resolve(__dirname, '../node_modules/react-native-vector-icons')
       }
     ]
   },

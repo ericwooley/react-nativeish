@@ -7,16 +7,15 @@ export default function <%= pascalEntityName %> (props) {
   const starCountText = props.starCount < 1 ? 'Get Stars' : props.starCount + ' stars'
   const icon = props.starCount < 1 ? 'star-o' : 'star'
   return (
-    <View style={{styles.container}}>
-      <Button
-        icon={{ name: icon, type: 'font-awesome' }}
-        title={starCountText} onPress={props.onPress} />
-    </View>
+    <Button
+      style={styles.button}
+      icon={{ name: icon, type: 'font-awesome' }}
+      title={starCountText} onPress={props.onPress} />
   )
 }
 
 <%= pascalEntityName %>.propTypes = {
-  starCount: React.PropTypes.number.isRequired,
+  starCount: React.PropTypes.number,
   onPress: React.PropTypes.func
 }
 

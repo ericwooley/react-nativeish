@@ -3,5 +3,5 @@
   "testBase":"",
   "smartPath":"",
   "dumbPath":"",
-  "fileCasing":"camelCase"
+  "fileCasing":"camel"
 }

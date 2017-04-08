@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf, action } from '@kadira/storybook'
-import <%= pascalEntityName %> from './<%= camelEntityName %>'
+import <%= pascalEntityName %> from './<%= camelEntityName %>Component'
 storiesOf('<%= pascalEntityName %>', module)
   .add('with text', () => (
     <<%= pascalEntityName %> onClick={action('clicked')}>
