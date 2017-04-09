@@ -3,9 +3,10 @@ import { storiesOf } from '@kadira/storybook'
 import { Provider } from 'react-redux'
 import { createReduxStore } from '../../redux/store'
 import <%= pascalEntityName %> from './<%= camelEntityName %>Container'
-const reduxStore = createReduxStore('Starter Kit', {})
+
 storiesOf('<%= pascalEntityName %>Container', module)
-  .add('with text', () => (
+  .add('with 7 stars', () => (
+    const reduxStore = createReduxStore('<%= pascalEntityName %> story store', {counter: {count: 7}})
     <Provider store={reduxStore}>
       <<%= pascalEntityName %> />
     </Provider>

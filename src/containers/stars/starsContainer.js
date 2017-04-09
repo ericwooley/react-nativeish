@@ -1,11 +1,23 @@
 import {connect} from 'react-redux'
 import {Stars} from '../../components'
 import {actions} from '../../redux/sagas/'
-export default connect(
-  (state) => ({
+
+// Global State
+export function mapStateToProps (state, props) {
+  return {
     starCount: state.counter.count
-  }),
-  {
-    onPress: actions.starsActions.FETCH_STARS
   }
-)(Stars)
+}
+// In Object form, each funciton is automatically wrapped in a dispatch
+export const propsMapping = {
+  onPress: actions.starsActions.FETCH_STARS
+}
+
+// If you want to use the function mapping
+// export const propsMapping = (dispatch, ownProps) => {
+//   return {
+//     onPress: () => dispatch(actions.starsActions.FETCH_STARS)
+//   }
+// }
+
+export default connect(mapStateToProps, propsMapping)(Stars)

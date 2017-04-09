@@ -14,7 +14,7 @@
     "storybook:ios": "storybook start -p 7007",
     "storybook:web": "start-storybook -p 9001 -c web/.storybook",
     "test": "yarn test:jest",
-    "test:storybook": "storyshots -c web/.storybook --webpack",
+    "test:update": "jest src/ -u",
     "test:jest": "jest src/",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006"
@@ -60,6 +60,7 @@
     "babel-polyfill": "^6.23.0",
     "font-awesome": "^4.7.0",
     "font-awesome-webpack": "^0.0.5-beta.2",
+    "jsdom": "^9.12.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "react": "^15.4.0",

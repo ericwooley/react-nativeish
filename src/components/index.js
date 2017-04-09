@@ -1,1 +1,1 @@
-export {default as Stars} from './stars/stars'
+export {default as Stars} from './stars/starsComponent'
