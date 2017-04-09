@@ -2,9 +2,9 @@ import React from 'react'
 import { StyleSheet, View, Image, Text } from 'react-native'
 import { Provider } from 'react-redux'
 import { createReduxStore } from '../../redux/store'
-import Stars from '../../containers/stars/starsContainer'
-
-const reduxStore = createReduxStore('Starter Kit')
+import { Button } from 'react-native-elements'
+import {Scenes} from '../'
+export const reduxStore = createReduxStore('Starter Kit')
 class App extends React.Component {
   render () {
     return (
@@ -12,7 +12,7 @@ class App extends React.Component {
         <View style={styles.container}>
           <Image source={require('../../assets/universal-logo.png')} style={{height: 73, width: 246}} />
           <Text>React Native Universal Web</Text>
-          <Stars />
+          <Button title='Go To Stars' onPress={() => this.props.navigation.navigate(Scenes.Stars)} />
         </View>
       </Provider>
     )
@@ -20,6 +20,12 @@ class App extends React.Component {
 }
 
 App.propTypes = {
+  navigation: React.PropTypes.shape({
+    navigate: React.PropTypes.func.isRequired
+  })
+}
+App.navigationOptions = {
+  title: 'Welcome'
 }
 export default App
 const styles = StyleSheet.create({

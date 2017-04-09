@@ -1,6 +1,7 @@
 var path = require('path')
 var fs = require('fs')
 var S = require('string')
+var prependFile = require('prepend-file')
 module.exports = {
   locals: function (options) {
     // Return custom template variables here.
@@ -29,7 +30,7 @@ module.exports = {
     var nameS = S(options.entity.name)
     // var camelCase = nameS.camelize()
     var pascalCase = nameS.capitalize()
-    fs.appendFileSync(path.join(__dirname, '../../src/containers/stories.js'), `import './${options.entity.name}/${options.entity.name}Container.story'\n`)
-    fs.appendFileSync(path.join(__dirname, '../../src/containers/index.js'), `export {default as ${pascalCase}} from './${options.entity.name}/${options.entity.name}Container'\n`)
+    fs.appendFileSync(path.join(__dirname, '../../src/scenes/stories.js'), `import './${options.entity.name}/${options.entity.name}Scene.story'\n`)
+    prependFile.sync(path.join(__dirname, '../../src/scenes/index.js'), `import ${pascalCase} from './${options.entity.name}/${options.entity.name}Scene'\n`)
   }
 }

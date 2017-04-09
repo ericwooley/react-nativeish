@@ -1,5 +1,10 @@
-import App from './App/App'
-const scenes = {
-  App
+import App from './app/appScene'
+import Stars from './stars/starsScene'
+export const Scenes = {
+  Home: 'Home',
+  Stars: 'Stars'
 }
-export default scenes
+export default {
+  [Scenes.Home]: { screen: App },
+  [Scenes.Stars]: { screen: Stars }
+}

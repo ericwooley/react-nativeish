@@ -1,6 +1,4 @@
-import React from 'react'
-import <%= pascalEntityName %> from './<%= camelEntityName %>Container'
-import {shallow} from 'enzyme'
+import {mapStateToProps, propsMapping} from './<%= camelEntityName %>Container'
 describe('<%= camelEntityName %> container', () => {
   it('should map state to props', () => {
     const state = {counter: {count: 12}}
@@ -10,4 +8,4 @@ describe('<%= camelEntityName %> container', () => {
   it('should have a propsMapping', () => {
     expect(typeof propsMapping.onPress).toEqual('function')
   })
-}
+})

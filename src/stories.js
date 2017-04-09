@@ -1,2 +1,3 @@
-import './containers/stars/starsContainer.story'
-import './components/stars/starsComponent.story'
+import './scenes/stories'
+import './containers/stories'
+import './components/stories'

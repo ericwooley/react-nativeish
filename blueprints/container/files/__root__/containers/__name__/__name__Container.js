@@ -20,4 +20,4 @@ export const propsMapping = {
 //   }
 // }
 
-export default connect(mapStateToProps, propsMapping)(Stars)
+export default connect(mapStateToProps, propsMapping)(<%= pascalEntityName %>)

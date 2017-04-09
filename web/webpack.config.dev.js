@@ -24,7 +24,7 @@ module.exports = {
       {
         // Most react-native libraries include uncompiled ES6 JS.
         test: /\.js$/,
-        include: [/node_modules\/react-native-/, /node_modules\/react-native-vector-icons/],
+        include: [/node_modules\/react-native-/, /node_modules\/react-native-vector-icons/, /node_modules\/react-navigation/],
         loader: 'babel-loader',
         query: { cacheDirectory: true }
       },
@@ -59,6 +59,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
+      'react-navigation': 'react-navigation/lib/react-navigation.js',
       'react-native': 'react-native-web',
       '@kadira/react-native-storybook': '@kadira/storybook'
     }

@@ -1,6 +1,4 @@
-import React from 'react'
-import scenes from './src/scenes'
+import { StackNavigator } from 'react-navigation'
+import SceneConfig from './src/scenes'
 import {AppRegistry} from 'react-native'
-const {App} = scenes
-const reactNativeReduxStarterKit = () => <App />
-AppRegistry.registerComponent('reactnativereduxstarterkit', () => reactNativeReduxStarterKit)
+AppRegistry.registerComponent('reactnativereduxstarterkit', () => StackNavigator(SceneConfig))
