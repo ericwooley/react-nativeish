@@ -1,4 +1,4 @@
-import watchStars, {actions as starsActions} from './stars/stars'
+import watchStars, {actions as starsActions} from './stars/starsSaga'
 
 export const actions = {
   starsActions

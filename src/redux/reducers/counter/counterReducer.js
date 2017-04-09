@@ -1,5 +1,5 @@
 import { createAction, handleActions } from 'redux-actions'
-import {FETCH_STARS_SUCCESS} from '../sagas/stars/stars'
+import {FETCH_STARS_SUCCESS} from '../../sagas/stars/starsSaga'
 // Name Spaced Action Types
 const INCREMENT = 'couter/INCREMENT'
 const DECREMENT = 'couter/DECREMENT'

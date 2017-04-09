@@ -1,4 +1,4 @@
-import {getStars} from '../stars'
+import {getStars} from './starsSaga'
 import { call } from 'redux-saga/effects'
 import axios from 'axios'
 

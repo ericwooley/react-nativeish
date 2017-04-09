@@ -1,4 +1,4 @@
-import counterReducer, {actions, actionCreators} from '../counter'
+import counterReducer, {actions, actionCreators} from './counterReducer'
 
 it('should create increment actions', () => {
   expect(actionCreators.increment(1)).toEqual({type: actions.INCREMENT, payload: 1})
