@@ -13,9 +13,8 @@
     "start": "yarn dev:ios",
     "storybook:ios": "storybook start -p 7007",
     "storybook:web": "start-storybook -p 9001 -c web/.storybook",
-    "test": "yarn test:jest",
+    "test": "jest src/",
     "test:update": "jest src/ -u",
-    "test:jest": "jest src/",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006"
   },

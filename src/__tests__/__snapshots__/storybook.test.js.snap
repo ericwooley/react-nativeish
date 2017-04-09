@@ -139,6 +139,286 @@ exports[`Storyshots App Scene should Render 1`] = `
         </Text>
       </View>
     </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+          },
+          undefined,
+        ]
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#9E9E9E",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "marginLeft": 15,
+              "marginRight": 15,
+              "padding": 19,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            Object {
+              "padding": 12,
+            },
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {},
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              Array [
+                Object {
+                  "color": "white",
+                  "fontSize": 20,
+                },
+                undefined,
+                Object {
+                  "fontSize": 17.5,
+                },
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+              ],
+            ]
+          }
+        >
+          Star us on github! It really helps us out
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Link with text 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hasTVPreferredFocus={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+      },
+      undefined,
+    ]
+  }
+  testID={undefined}
+  tvParallaxProperties={undefined}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#9E9E9E",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginLeft": 15,
+          "marginRight": 15,
+          "padding": 19,
+        },
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        Object {
+          "padding": 12,
+        },
+        undefined,
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {},
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 20,
+            },
+            undefined,
+            Object {
+              "fontSize": 17.5,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ],
+        ]
+      }
+    >
+      test
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Link with url 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hasTVPreferredFocus={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+      },
+      undefined,
+    ]
+  }
+  testID={undefined}
+  tvParallaxProperties={undefined}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#9E9E9E",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginLeft": 15,
+          "marginRight": 15,
+          "padding": 19,
+        },
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        Object {
+          "padding": 12,
+        },
+        undefined,
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {},
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 20,
+            },
+            undefined,
+            Object {
+              "fontSize": 17.5,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ],
+        ]
+      }
+    />
   </View>
 </View>
 `;
@@ -269,6 +549,98 @@ exports[`Storyshots Stars with no onClick 1`] = `
         }
       >
         undefined stars
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        undefined,
+      ]
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#9E9E9E",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginLeft": 15,
+            "marginRight": 15,
+            "padding": 19,
+          },
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          Object {
+            "padding": 12,
+          },
+          undefined,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {},
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              undefined,
+              Object {
+                "fontSize": 17.5,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+            ],
+          ]
+        }
+      >
+        Star us on github! It really helps us out
       </Text>
     </View>
   </View>
@@ -404,6 +776,98 @@ exports[`Storyshots Stars with some emoji 1`] = `
       </Text>
     </View>
   </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        undefined,
+      ]
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#9E9E9E",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginLeft": 15,
+            "marginRight": 15,
+            "padding": 19,
+          },
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          Object {
+            "padding": 12,
+          },
+          undefined,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {},
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              undefined,
+              Object {
+                "fontSize": 17.5,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+            ],
+          ]
+        }
+      >
+        Star us on github! It really helps us out
+      </Text>
+    </View>
+  </View>
 </View>
 `;
 
@@ -536,6 +1000,98 @@ exports[`Storyshots Stars with text 1`] = `
       </Text>
     </View>
   </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        undefined,
+      ]
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#9E9E9E",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginLeft": 15,
+            "marginRight": 15,
+            "padding": 19,
+          },
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          Object {
+            "padding": 12,
+          },
+          undefined,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {},
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              undefined,
+              Object {
+                "fontSize": 17.5,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+            ],
+          ]
+        }
+      >
+        Star us on github! It really helps us out
+      </Text>
+    </View>
+  </View>
 </View>
 `;
 
@@ -665,6 +1221,98 @@ exports[`Storyshots StarsContainer with text 1`] = `
         }
       >
         7 stars
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        undefined,
+      ]
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#9E9E9E",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginLeft": 15,
+            "marginRight": 15,
+            "padding": 19,
+          },
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          Object {
+            "padding": 12,
+          },
+          undefined,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {},
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              undefined,
+              Object {
+                "fontSize": 17.5,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+            ],
+          ]
+        }
+      >
+        Star us on github! It really helps us out
       </Text>
     </View>
   </View>

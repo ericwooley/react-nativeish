@@ -3,6 +3,7 @@ import { View, StyleSheet } from 'react-native'
 import {
   Button
 } from 'react-native-elements'
+import {Link} from '../'
 export default function Stars (props) {
   const starCountText = props.starCount < 1 ? 'Get Stars' : props.starCount + ' stars'
   const icon = props.starCount < 1 ? 'star-o' : 'star'
@@ -12,6 +13,9 @@ export default function Stars (props) {
         style={styles.button}
         icon={{ name: icon, type: 'font-awesome' }}
         title={starCountText} onPress={props.onPress} />
+      <Link
+        text='Star us on github! It really helps us out'
+        url='https://github.com/ericwooley/react-native-redux-jest-starter-kit' />
     </View>
   )
 }
