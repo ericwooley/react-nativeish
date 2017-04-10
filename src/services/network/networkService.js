@@ -8,6 +8,7 @@ import gitHubMocks from './mocks/github'
  */
 let mocksInitiated = false
 let mock = null
+let mocksEnabled = false
 export default axios
 export function mockRequests () {
   if (!mocksInitiated) {
@@ -18,6 +19,16 @@ export function mockRequests () {
     axios.defaults.adapter = mock
   }
   mocksInitiated = true
+}
+
+export function toggleMocks () {
+  if (mocksEnabled) {
+    restoreRequests()
+    mocksEnabled = false
+  } else {
+    mockRequests()
+    mocksEnabled = true
+  }
 }
 
 export function restoreRequests () {
