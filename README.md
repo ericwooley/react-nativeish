@@ -1,5 +1,7 @@
-React Native Web Redux Starter Kit
+React Native...ish
 ==================================
+
+![runs everywhere](./docs/assets/runs-everywhere.gif∏)
 
 ## Quick Links
 1. [Dependencies](#dependencies) √ 
@@ -199,8 +201,6 @@ TODO
 References
 ----------
 TODO
-
-![runs everywhere](./docs/assets/runs-everywhere.png)
 
 Notes
 -----
