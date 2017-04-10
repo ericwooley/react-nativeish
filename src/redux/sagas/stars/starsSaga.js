@@ -1,4 +1,4 @@
-import axios from '../../../services/network/network'
+import axios from '../../../services/network/networkService'
 import { takeLatest, call, put } from 'redux-saga/effects'
 import { createAction } from 'redux-actions'
 export const FETCH_STARS = 'saga/FETCH_STARS'

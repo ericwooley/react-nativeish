@@ -101,6 +101,12 @@ Take a quick look at the directory structure. (explanations follow)
 * Unit Tests
   Make sure you understand jest, unit tests, and TDD in general. This project has githooks which check your test on commit.
 
+* Mocks
+  This project uses the [axios](https://github.com/mzabriskie/axios) library for xhr requests, and it's compatable with react native. 
+  Mocks are done using [axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter)
+
+  * see src/services/network
+
 
 ### Libraries
 Become very familiar with each of these libraries.

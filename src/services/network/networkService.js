@@ -12,13 +12,14 @@ export default axios
 export function mockRequests () {
   if (!mocksInitiated) {
     mock = new MockAdapter(axios)
+    // Mocks should be added here
     gitHubMocks(mock)
   } else {
     axios.defaults.adapter = mock
   }
   mocksInitiated = true
 }
-mockRequests()
+
 export function restoreRequests () {
   mock.restore()
 }
