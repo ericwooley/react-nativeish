@@ -26,11 +26,11 @@ Take a quick look at the directory structure. (explanations follow)
 ```bash
 ├── android                                           # Android build project
 ├── app.json
-├── blueprints                                        # Blue print folders
-│   ├── component                                     # Blue print for component `redux g component <component name>
-│   ├── container                                     # Blue print for container `redux g component <container name>
-│   ├── saga                                          # Blue print for saga `redux g component <saga name>
-│   └── scene                                         # Blue print for scenes `redux g component <scene name>
+├── blueprints                                        # Blueprint folders
+│   ├── component                                     # Blueprint for component `redux g component <component name>`
+│   ├── container                                     # Blueprint for container `redux g container <container name>`
+│   ├── saga                                          # Blueprint for saga `redux g saga <saga name>`
+│   └── scene                                         # Blueprint for scenes `redux g scenes <scene name>`
 ├── index.android.js                                  # entry point for android
 ├── index.ios.js                                      # entry point for ios
 ├── index.web.js                                      # entry point for web
@@ -83,7 +83,7 @@ Take a quick look at the directory structure. (explanations follow)
     
     * run `yarn storybook:web` and open [http://localhost:9001/](http://localhost:9001/) to open the storybook ui
     
-    * run `yarn storybook:web` and open [http://localhost:7007/](http://localhost:7007/) and open the app to get the stories in the simulator
+    * run `yarn storybook:ios` and open [http://localhost:7007/](http://localhost:7007/) and open the app to get the stories in the simulator
 
   2. StoyShots
   Storyshots convert storybook stories to jest snapshots. So that when you run unit tests, it checks the underylying dom elements havn't changed.
