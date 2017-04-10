@@ -3,11 +3,11 @@ React Native Web Redux Starter Kit
 
 ## Quick Links
 1. [Dependencies](#dependencies) √ 
-2. [Onboarding](#onboarding) √* 
-  * [Libraries](#libraries)
-3. [Development](#developing) √*
+2. [Onboarding](#onboarding) √
+  * [Libraries](#libraries) √
+3. [Development](#developing) √
 4. [Deployment](#deployment) ¬
-5. [Blueprints](#blueprints) ¬
+5. [Blueprints](#blueprints) √
 6. [References](#references) ¬
 7. [Notes](#notes)
 
