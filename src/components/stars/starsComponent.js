@@ -15,7 +15,7 @@ export default function Stars (props) {
         title={starCountText} onPress={props.onPress} />
       <Link
         text='Star us on github! It really helps us out'
-        url='https://github.com/ericwooley/react-native-redux-jest-starter-kit' />
+        url='https://github.com/ericwooley/react-nativeish' />
     </View>
   )
 }
