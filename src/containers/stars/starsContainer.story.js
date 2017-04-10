@@ -1,5 +1,5 @@
 import React from 'react'
-import { storiesOf } from '@kadira/storybook'
+import { storiesOf } from '@kadira/react-native-storybook'
 import { Provider } from 'react-redux'
 import { createReduxStore } from '../../redux/store'
 import Stars from './starsContainer'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { storiesOf } from '@kadira/storybook'
+import { storiesOf } from '@kadira/react-native-storybook'
 import Link from './linkComponent'
 storiesOf('Link', module)
   .add('with text', () => (

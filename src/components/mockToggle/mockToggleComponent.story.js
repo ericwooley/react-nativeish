@@ -1,5 +1,5 @@
 import React from 'react'
-import { storiesOf, action } from '@kadira/storybook'
+import { storiesOf, action } from '@kadira/react-native-storybook'
 import MockToggle from './mockToggleComponent'
 
 storiesOf('MockToggle', module)
