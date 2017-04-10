@@ -6,7 +6,8 @@ try {
 } catch (e) {
   console.warn('Fonts not loaded')
 }
-
+import {LinkService, setLinkServiceSingleton} from '../../src/services/linkService/linkService'
+setLinkServiceSingleton(new LinkService({openLinkBehavior: (url) => { window.location.href = url }}))
 
 
 

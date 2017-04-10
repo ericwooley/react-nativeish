@@ -5,7 +5,7 @@ import {
 } from 'react-native-elements'
 import {Link} from '../'
 export default function Stars (props) {
-  const starCountText = props.starCount < 1 ? 'Get Stars' : props.starCount + ' stars'
+  const starCountText = props.starCount < 1 ? 'Get Stars ' : props.starCount + ' stars '
   const icon = props.starCount < 1 ? 'star-o' : 'star'
   return (
     <View style={styles.container}>

@@ -135,7 +135,7 @@ exports[`Storyshots App Scene should Render 1`] = `
             ]
           }
         >
-          Get Stars
+          Get Stars 
         </Text>
       </View>
     </View>
@@ -548,7 +548,7 @@ exports[`Storyshots Stars with no onClick 1`] = `
           ]
         }
       >
-        undefined stars
+        undefined stars 
       </Text>
     </View>
   </View>
@@ -772,7 +772,7 @@ exports[`Storyshots Stars with some emoji 1`] = `
           ]
         }
       >
-        undefined stars
+        undefined stars 
       </Text>
     </View>
   </View>
@@ -996,7 +996,7 @@ exports[`Storyshots Stars with text 1`] = `
           ]
         }
       >
-        undefined stars
+        undefined stars 
       </Text>
     </View>
   </View>
@@ -1220,7 +1220,7 @@ exports[`Storyshots StarsContainer with text 1`] = `
           ]
         }
       >
-        7 stars
+        7 stars 
       </Text>
     </View>
   </View>

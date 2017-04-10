@@ -3,7 +3,7 @@ React Native Web Redux Starter Kit
 
 ## Quick Links
 1. [Dependencies](#dependencies) √ 
-3. [Onboarding](#onboarding) √* 
+2. [Onboarding](#onboarding) √* 
   * [Libraries](#libraries)
 3. [Development](#developing) √*
 4. [Deployment](#deployment) ¬
@@ -66,18 +66,17 @@ Take a quick look at the directory structure. (explanations follow)
 │   │   │   ├── <scene name>Scene.js                  # Test files for scenes
 │   │   └── index.js                                  # Exports all scenes
 │   └── stories.js                                    # Imports and exports all other stories. 
+│   ├── services
+│   │   └── <service name>Service
+│   │       ├── <service name>Service.js
+│   │       └── <service name>Service.test.js
 ├── storybook                                         # Native storybook config
 ├── test_config                                       # Setup files for jest
 ├── web                                               # Web config files for react-native-web
 └── yarn.lock                                         # Locks all libraries in place. 
 ```
 * Components
-  Components are like the View in MVC. It should only accept props, and output JSX, with generalized callback props (onClick, onHover, onSomethingCustom, etc...)
-  
-  * Example: 
-    ```js
-    // TODO
-    ```
+  Components are like the View in MVC. It should only accept props, and output JSX, with generalized callback props (onClick, onHover, onSomethingCustom, etc...). Think of components like your own personal html framework, these shouldn't know anything about the state of the app.
 
   1. Stories
   Stories are react storybook stories, and are effectively documentation for the components. 
@@ -91,24 +90,20 @@ Take a quick look at the directory structure. (explanations follow)
   
 * Containers (Smart Components)
   Containers are components that use redux-connect to map a components props to redux state and actions.
-  For unit testing see [this blog post](http://www.wsbrunson.com/react/redux/test/2016/05/08/testing-redux-containers.html)
     
 * Scenes
   Scenes are components that are loaded via react native navigation. It should be composed entirely of smart components.
   
-* Redux
-  1. Reducers
-  TODO
-  
-  2. Sagas
-  TODO
-  
+* Services
+  Services are configurable (often singleton) objects which can be imported into other parts of the app. There is no boilerplates for this because each
+  case for a service is probably too different.
+
 * Unit Tests
-  TODO
+  Make sure you understand jest, unit tests, and TDD in general. This project has githooks which check your test on commit.
 
 
 ### Libraries
-Become familiar with each of these libraries.
+Become very familiar with each of these libraries.
 
 1. [React](https://facebook.github.io/react/)
   * [shouldComponentUpdate](https://facebook.github.io/react/docs/optimizing-performance.html#shouldcomponentupdate-in-action)
@@ -149,10 +144,23 @@ Development
   * `yarn dev:ios`: run the react-native app in IOS
   * `yarn dev:android`: run the react-native app in ANDROID
   * `yarn dev:web`: run the react-native app in WEB
+    You can open chrom://extensions, enable developer mode, and load web/chrome-ext as an unpacked extension. It should load the webpack build server just like developing in web.
 
 3. Development Workflow 
-  * TODO
+  * Start by identifying which components you need and start react-storybook `yarn storybook:web` and open [http://localhost:9001/](http://localhost:9001/)
+    1. Develop the component, and create comprehensive tests.
 
+  * Create containers to wrap them to state, as needed (which can still be done via creating stories in storybook)
+    1. This is also a good time to develop any sagas or reducers you need.
+    
+  * Kill storybook and run `yarn dev:web` and open [http://localhost:3000/](http://localhost:3000/)
+    1. Create or open the view you want to develop, navigate there in your app, and happy developing!
+
+  * Once you are happy with the way it looks in web, open it in ios and android, to make sure you didn't miss/break something.
+  
+  * At this point your unit tests are probably broken from storyshots. `npm run test` and take a look through the broken stories to make sure everything is acceptable. If not, fix whats broken, if so run `npm run test:update` to accept the new DOM changes, and make sure the rest of your tests pass.
+
+  * TIP: when running tests run `npm run test -- --watch` to have jest watch your test files and only run the ones that change.
 Blueprints
 ----------
 This project takes advantage of the [redux-cli](https://github.com/SpencerCDixon/redux-cli) project. Which allows you to commit your own template files for 
