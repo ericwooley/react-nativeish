@@ -13,6 +13,7 @@ class App extends React.Component {
           <Image source={require('../../assets/universal-logo.png')} style={{height: 73, width: 246}} />
           <Text>React Native Universal Web</Text>
           <Button title='Go To Stars' onPress={() => this.props.navigation.navigate(Scenes.Stars)} />
+          <Button title='DevPanel' onPress={() => this.props.navigation.navigate(Scenes.DevPanel)} />
         </View>
       </Provider>
     )

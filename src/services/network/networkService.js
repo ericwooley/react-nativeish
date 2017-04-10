@@ -29,6 +29,7 @@ export function toggleMocks () {
     mockRequests()
     mocksEnabled = true
   }
+  return mocksEnabled
 }
 
 export function restoreRequests () {

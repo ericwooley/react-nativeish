@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import {<%= pascalEntityName %>} from '../../components'
-import {actions} from '../../redux/sagas/'
+import {actionCreators} from '../../redux/sagas/'
 
 // Global State
 export function mapStateToProps (state, props) {
