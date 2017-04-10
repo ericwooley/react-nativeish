@@ -1,7 +1,7 @@
 React Native...ish
 ==================================
 
-![runs everywhere](./docs/assets/runs-everywhere.gif∏)
+![runs everywhere](./docs/assets/runs-everywhere.gif)
 
 ## Quick Links
 1. [Dependencies](#dependencies) √ 
@@ -88,19 +88,23 @@ Take a quick look at the directory structure. (explanations follow)
     * run `yarn storybook:ios` and open [http://localhost:7007/](http://localhost:7007/) and open the app to get the stories in the simulator
 
   2. StoyShots
-  Storyshots convert storybook stories to jest snapshots. So that when you run unit tests, it checks the underylying dom elements havn't changed.
+  Storyshots convert storybook stories to jest snapshots. So that when you run unit tests, it checks the underlying dom elements havn't changed.
   
 * Containers (Smart Components)
+  
   Containers are components that use redux-connect to map a components props to redux state and actions.
     
 * Scenes
+  
   Scenes are components that are loaded via react native navigation. It should be composed entirely of smart components.
   
 * Services
+  
   Services are configurable (often singleton) objects which can be imported into other parts of the app. There is no boilerplates for this because each
   case for a service is probably too different.
 
 * Unit Tests
+  
   Make sure you understand jest, unit tests, and TDD in general. This project has githooks which check your test on commit.
 
 * Mocks
