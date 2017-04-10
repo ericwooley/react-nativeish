@@ -26,8 +26,11 @@ Take a quick look at the directory structure. (explanations follow)
 ```bash
 ├── android                                           # Android build project
 ├── app.json
-├── blueprints                                        # TODO
-│   └── component
+├── blueprints                                        # Blue print folders
+│   ├── component                                     # Blue print for component `redux g component <component name>
+│   ├── container                                     # Blue print for container `redux g component <container name>
+│   ├── saga                                          # Blue print for saga `redux g component <saga name>
+│   └── scene                                         # Blue print for scenes `redux g component <scene name>
 ├── index.android.js                                  # entry point for android
 ├── index.ios.js                                      # entry point for ios
 ├── index.web.js                                      # entry point for web
@@ -43,9 +46,9 @@ Take a quick look at the directory structure. (explanations follow)
 │   │   ├── index.js                                  # exports all components
 │   │   └── <component name>                          # root folder for component
 │   │       ├── __tests__                             # component test folder
-│   │       │   └── <component name>Component.test.js          # component test file
-│   │       ├── <component name>Component.js                   # component file
-│   │       └── <component name>Component.story.js             # component story file
+│   │       │   └── <component name>Component.test.js # component test file
+│   │       ├── <component name>Component.js          # component file
+│   │       └── <component name>Component.story.js    # component story file
 │   ├── redux                                         # Redux files
 │   │   ├── reducers                                  # redux reducers
 │   │   │   ├── __tests__                             # tests for reducers
@@ -55,12 +58,12 @@ Take a quick look at the directory structure. (explanations follow)
 │   │   │   ├── index.js                              # exports all saga files.
 │   │   │   └── <saga name>                           # Saga container
 │   │   │       ├── __tests__
-│   │   │       │   └── <saga name>Saga.test.js           # Saga test file
+│   │   │       │   └── <saga name>Saga.test.js       # Saga test file
 │   │   │       └── <saga name>Saga.js                # Saga
 │   │   └── store.js                                  # creates and configures the redux store
 │   ├── scenes                                        # Scenes (maps to routes, similar to views)
-│   │   ├── App                                       # Root scene, contains navigation
-│   │   │   ├── App.js
+│   │   ├── <scene name>Scene.js                      # Scene component, should only compose containers
+│   │   │   ├── <scene name>Scene.js                  # Test files for scenes
 │   │   └── index.js                                  # Exports all scenes
 │   └── stories.js                                    # Imports and exports all other stories. 
 ├── storybook                                         # Native storybook config
@@ -83,28 +86,16 @@ Take a quick look at the directory structure. (explanations follow)
     
     * run `yarn storybook:web` and open [http://localhost:7007/](http://localhost:7007/) and open the app to get the stories in the simulator
 
-    * Example: 
-    ```js
-    // TODO
-    ```
   2. StoyShots
   Storyshots convert storybook stories to jest snapshots. So that when you run unit tests, it checks the underylying dom elements havn't changed.
   
 * Containers (Smart Components)
   Containers are components that use redux-connect to map a components props to redux state and actions.
   For unit testing see [this blog post](http://www.wsbrunson.com/react/redux/test/2016/05/08/testing-redux-containers.html)
-  * Example: 
-    ```js
-    // TODO
-    ```
     
 * Scenes
   Scenes are components that are loaded via react native navigation. It should be composed entirely of smart components.
-  * Example: 
-    ```js
-    // TODO
-    ```
-
+  
 * Redux
   1. Reducers
   TODO
@@ -164,7 +155,25 @@ Development
 
 Blueprints
 ----------
-TODO
+This project takes advantage of the [redux-cli](https://github.com/SpencerCDixon/redux-cli) project. Which allows you to commit your own template files for 
+generating. 
+
+* component -  generates all tests/story/code boilerplate needed for a component. All files are placed in src/components.
+
+  - EG: `redux g component test`
+
+* container -  generates all tests/story/code boilerplate needed for a container. All files are placed in src/container.
+
+  - EG: `redux g container test`
+
+* saga -  generates all test/code boilerplate needed for a saga. All files are placed in src/saga.
+
+  - EG: `redux g saga test`
+
+* scene - generates all test/story/code boilerplate needed for a scene. All files are placed in src/scene.
+
+  - EG: `redux g scene test`
+
 
 Deployment
 ----------
