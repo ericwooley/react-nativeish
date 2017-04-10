@@ -1,7 +1,7 @@
 React Native...ish
 ==================================
 
-![runs everywhere](./docs/assets/runs-everywhere.gif∏)
+![runs everywhere](./docs/assets/runs-everywhere.gif)
 
 ## Quick Links
 1. [Dependencies](#dependencies) √ 
