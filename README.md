@@ -167,10 +167,13 @@ Development
   * At this point your unit tests are probably broken from storyshots. `npm run test` and take a look through the broken stories to make sure everything is acceptable. If not, fix whats broken, if so run `npm run test:update` to accept the new DOM changes, and make sure the rest of your tests pass.
 
   * TIP: when running tests run `npm run test -- --watch` to have jest watch your test files and only run the ones that change.
+  
 Blueprints
 ----------
 This project takes advantage of the [redux-cli](https://github.com/SpencerCDixon/redux-cli) project. Which allows you to commit your own template files for 
 generating. 
+
+** Start your component name with a lowercase, or things may not line up properly ** 
 
 * component -  generates all tests/story/code boilerplate needed for a component. All files are placed in src/components.
 
