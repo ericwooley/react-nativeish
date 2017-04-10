@@ -26,11 +26,11 @@ Take a quick look at the directory structure. (explanations follow)
 ```bash
 ├── android                                           # Android build project
 ├── app.json
-├── blueprints                                        # Blueprint folders
-│   ├── component                                     # Blueprint for component `redux g component <component name>`
-│   ├── container                                     # Blueprint for container `redux g container <container name>`
-│   ├── saga                                          # Blueprint for saga `redux g saga <saga name>`
-│   └── scene                                         # Blueprint for scenes `redux g scenes <scene name>`
+├── blueprints                                        # Blue print folders
+│   ├── component                                     # Blue print for component `redux g component <component name>`
+│   ├── container                                     # Blue print for container `redux g container <container name>`
+│   ├── saga                                          # Blue print for saga `redux g saga <saga name>`
+│   └── scene                                         # Blue print for scenes `redux g scene <scene name>`
 ├── index.android.js                                  # entry point for android
 ├── index.ios.js                                      # entry point for ios
 ├── index.web.js                                      # entry point for web
