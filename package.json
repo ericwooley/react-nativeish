@@ -31,6 +31,9 @@
     "setupFiles": [
       "./test_config/setup.js"
     ],
+    "transformIgnorePatterns": [                                                 
+      "node_modules/(?!(jest-)?react-native|react-navigation)"                   
+    ],
     "globals": {
       "__DEV__": true,
       "__TEST__": true
