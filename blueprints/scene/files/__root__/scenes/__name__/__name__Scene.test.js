@@ -1,5 +1,5 @@
 import React from 'react'
-import <%= pascalEntityName %>Scene from './<%= pascalEntityName %>Scene'
+import <%= pascalEntityName %>Scene from './<%= camelEntityName %>Scene'
 import {shallow} from 'enzyme'
 
 it('should render', () => {

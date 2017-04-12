@@ -1,5 +1,5 @@
 import React from 'react'
-import StarsScene from './StarsScene'
+import StarsScene from './starsScene'
 import {shallow} from 'enzyme'
 
 it('should render', () => {

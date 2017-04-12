@@ -1,5 +1,5 @@
 import React from 'react'
-import DevpanelScene from './DevpanelScene'
+import DevpanelScene from './devpanelScene'
 import {shallow} from 'enzyme'
 
 it('should render', () => {
