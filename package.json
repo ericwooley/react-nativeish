@@ -28,6 +28,14 @@
     ]
   },
   "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 99,
+        "functions": 99,
+        "lines": 99,
+        "statements": 99
+      }
+    },
     "collectCoverageFrom": ["src/**/*.js*"],
     "coveragePathIgnorePatterns": [
       "node_modules/",
@@ -38,7 +46,8 @@
       "src/containers/mockToggle/",
       "story.js",
       "src/redux/store.js",
-      "style.js"
+      "style.js",
+      "src/services/linkService"
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/build/",
