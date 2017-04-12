@@ -12,16 +12,8 @@ export function mapStateToProps (state, props) {
 export const propsMapping = {
   onPress: () => {
     const enabled = toggleMocks()
-    console.log({enabled})
     return actionCreators.enableMocks(enabled)
   }
 }
-
-// If you want to use the function mapping
-// export const propsMapping = (dispatch, ownProps) => {
-//   return {
-//     onPress: () => dispatch(actions.starsActions.FETCH_STARS)
-//   }
-// }
 
 export default connect(mapStateToProps, propsMapping)(MockToggle)

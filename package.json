@@ -14,6 +14,7 @@
     "storybook:ios": "storybook start -p 7007",
     "storybook:web": "start-storybook -p 9001 -c web/.storybook",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "test:update": "jest -u",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006"
@@ -27,6 +28,18 @@
     ]
   },
   "jest": {
+    "collectCoverageFrom": ["src/**/*.js*"],
+    "coveragePathIgnorePatterns": [
+      "node_modules/",
+      "blueprints/", 
+      "build/", "web/",
+      "__snapshots__/",
+      "src/services/network",
+      "src/containers/mockToggle/",
+      "story.js",
+      "src/redux/store.js",
+      "style.js"
+    ],
     "testPathIgnorePatterns": [
       "<rootDir>/build/",
       "<rootDir>/node_modules/",
