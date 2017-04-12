@@ -13,8 +13,8 @@
     "start": "yarn dev:ios",
     "storybook:ios": "storybook start -p 7007",
     "storybook:web": "start-storybook -p 9001 -c web/.storybook",
-    "test": "jest src/",
-    "test:update": "jest src/ -u",
+    "test": "jest",
+    "test:update": "jest -u",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006"
   },
@@ -27,6 +27,11 @@
     ]
   },
   "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/node_modules/",
+      "<rootDir>/blueprints/"
+    ],
     "preset": "jest-react-native",
     "setupFiles": [
       "./test_config/setup.js"
