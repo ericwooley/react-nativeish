@@ -1,18 +1,16 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
-import { Provider } from 'react-redux'
-import {reduxStore} from '../app/appScene'
 import {Stars} from '../../containers'
 import styles from './<%= camelEntityName %>Scene.style'
-
+import {SceneWrapper} from '../'
 class <%= pascalEntityName %>Scene extends React.Component {
   render () {
     return (
-      <Provider store={reduxStore}>
+      <SceneWrapper>
         <View style={styles.container}>
           <Stars />
         </View>
-      </Provider>
+      </SceneWrapper>
     )
   }
 }
