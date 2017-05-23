@@ -9,5 +9,3 @@ require('font-awesome-webpack')
 
 AppRegistry.registerComponent('App', () => StackNavigator(SceneConfig))
 AppRegistry.runApplication('App', {rootTag: document.getElementById('react-root')})
-
-
