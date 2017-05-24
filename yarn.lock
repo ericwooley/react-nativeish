@@ -5344,7 +5344,7 @@ react-native@0.44.0:
     xpipe "^1.0.5"
     yargs "^6.4.0"
 
-react-navigation@beta-10:
+react-navigation@^1.0.0-beta.9:
   version "1.0.0-beta.10"
   resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.0.0-beta.10.tgz#75e6d1cc076a6fdc5b8b8fbe478151fe81434688"
   dependencies:

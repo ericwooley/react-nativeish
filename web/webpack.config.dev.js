@@ -61,8 +61,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.web.js', '.js'],
     alias: {
-      'react-navigation': 'react-navigation/lib/react-navigation.js',
-      'react-navigation/lib/PlatformHelpers.js': 'react-navigation/lib/PlatformHelpers.native.js',
+      'react-navigation': 'react-navigation/lib-rn/react-navigation.js',
       'react-native': 'react-native-web',
       '@kadira/react-native-storybook': '@kadira/storybook'
     }
