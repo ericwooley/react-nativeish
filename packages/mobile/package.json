@@ -1,11 +1,12 @@
 {
-  "name": "ishMobile",
+  "name": "mobile",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "storybook": "storybook start -p 7007"
+    "storybook": "storybook start -p 7007",
+    "haul": "haul start"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -29,6 +30,7 @@
     "babel-jest": "20.0.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.5",
     "babel-preset-react-native": "1.9.2",
+    "haul": "^1.0.0-beta.1",
     "jest": "20.0.4",
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.5.4"
