@@ -9,7 +9,7 @@ export default function Stars (props) {
       <Button
         style={styles.button}
         icon={{ name: icon, type: 'font-awesome' }}
-        title={starCountText} onPress={props.onPress} />
+        title={"test" + starCountText} onPress={props.onPress} />
     </View>
   )
 }
