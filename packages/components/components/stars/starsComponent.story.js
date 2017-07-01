@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 import { action } from '@storybook/addon-actions';
 import Stars from './starsComponent'
-storiesOf('Stars', module)
+storiesOf('Stars test', module)
   .add('with text', () => (
     <Stars onClick={action('clicked')}>
       Hello Button

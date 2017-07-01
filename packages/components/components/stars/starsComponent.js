@@ -1,7 +1,6 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import { Button } from "react-native-elements";
-import { Link } from "../";
+import { View, StyleSheet, Button } from "react-native";
+import PropTypes from "prop-types";
 export default function Stars(props) {
   const starCountText = props.starCount < 1
     ? "Get Stars "
@@ -11,21 +10,16 @@ export default function Stars(props) {
     <View style={styles.container}>
       <Button
         style={styles.button}
-        icon={{ name: icon, type: "font-awesome" }}
-        title={starCountText}
+        title={"test" + starCountText}
         onPress={props.onPress}
-      />
-      <Link
-        text="Star us on github! It really helps us out"
-        url="https://github.com/ericwooley/react-nativeish"
       />
     </View>
   );
 }
 
 Stars.propTypes = {
-  starCount: React.PropTypes.number,
-  onPress: React.PropTypes.func
+  starCount: PropTypes.number,
+  onPress: PropTypes.func
 };
 
 const styles = StyleSheet.create({

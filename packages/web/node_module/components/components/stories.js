@@ -1,0 +1,1 @@
+import './stars/starsComponent.story'

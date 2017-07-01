@@ -3,7 +3,7 @@ import { View, StyleSheet, Button } from "react-native";
 import PropTypes from "prop-types";
 export default function Stars(props) {
   const starCountText = props.starCount < 1
-    ? "Get Stars  "
+    ? "Get Stars "
     : props.starCount + " stars ";
   const icon = props.starCount < 1 ? "star-o" : "star";
   return (

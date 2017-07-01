@@ -1,17 +1,17 @@
-import {connect} from 'react-redux'
-import {Stars} from '../../components'
-import {actions} from '../../redux/sagas/'
+import { connect } from "react-redux";
+import { Stars } from "react-native-components";
+import { actions } from "../../redux/sagas/";
 
 // Global State
-export function mapStateToProps (state, props) {
+export function mapStateToProps(state, props) {
   return {
     starCount: state.counter.count
-  }
+  };
 }
 // In Object form, each funciton is automatically wrapped in a dispatch
 export const propsMapping = {
   onPress: actions.starsActions.FETCH_STARS
-}
+};
 
 // If you want to use the function mapping
 // export const propsMapping = (dispatch, ownProps) => {
@@ -20,4 +20,4 @@ export const propsMapping = {
 //   }
 // }
 
-export default connect(mapStateToProps, propsMapping)(Stars)
+export default connect(mapStateToProps, propsMapping)(Stars);

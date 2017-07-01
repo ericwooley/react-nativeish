@@ -1,1 +1,1 @@
-import "components/stories";
+import "react-native-components/stories";
