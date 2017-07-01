@@ -10,6 +10,7 @@ var { createScreenBufferStreamer } = require("../bufferDispay");
 var screen = initScreen();
 var shelljs = require("shelljs");
 const stream = require("stream");
+const [, , mainDevCommand] = process.argv;
 
 const errorStream = new stream.PassThrough();
 let errorData = [];
@@ -34,7 +35,7 @@ var webSync = shelljs.exec(
   { async: true, silent: true }
 );
 
-const errorLabels = {};
+var mainDev = shelljs.exec(mainDevCommand, { async: true, silent: true });
 
 webSync.stderr.on("data", data => {
   const prependedData = formatLabel("web Rsync error") + data;
@@ -46,8 +47,14 @@ mobileSync.stderr.on("data", data => {
   errorStream.push(prependedData);
 });
 
-const r1 = 25;
-const r2 = 50;
+mainDev.stderr.on("data", data => {
+  const prependedData = formatLabel("dev error") + data;
+  errorStream.push(prependedData);
+});
+
+const rsyncHeight = 25;
+const errorRowHeight = 25;
+const mainDevHeight = 50;
 
 var mobileComponentSync = createScreenBufferStreamer(
   screen,
@@ -57,7 +64,7 @@ var mobileComponentSync = createScreenBufferStreamer(
     top: 0,
     label: "mobile component sync",
     width: "50%",
-    height: r1 + "%"
+    height: rsyncHeight + "%"
   }
 );
 
@@ -66,7 +73,15 @@ var webComponentSync = createScreenBufferStreamer(screen, webSync.stdout, {
   top: 0,
   label: "web component sync",
   width: "50%",
-  height: r1 + "%"
+  height: rsyncHeight + "%"
+});
+
+var mainDev = createScreenBufferStreamer(screen, mainDev.stdout, {
+  right: 0,
+  top: rsyncHeight + "%",
+  label: mainDevCommand,
+  width: "100%",
+  height: mainDevHeight + "%"
 });
 
 var errors = createScreenBufferStreamer(
@@ -74,10 +89,10 @@ var errors = createScreenBufferStreamer(
   errorStream,
   {
     right: 0,
-    top: r1 + "%",
+    bottom: 0,
     label: "errorStream",
     width: "100%",
-    height: r2 + "%"
+    height: errorRowHeight + "%"
   },
   red
 );
