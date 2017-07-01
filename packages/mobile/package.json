@@ -5,19 +5,19 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "storybook": "storybook start -p 7007 --haul webpack.haul.storybook.js",
-    "haul": "haul start"
+    "haul": "haul start",
+    "storybook": "storybook start -p 7007 --haul webpack.haul.storybook.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
     "axios-mock-adapter": "^1.8.1",
-    "enzyme": "^2.8.2",
     "components": "1.0.0",
+    "enzyme": "^2.8.2",
     "react": "16.0.0-alpha.12",
+    "react-dom": "16.0.0-alpha.12",
     "react-native": "0.45.1",
     "react-native-elements": "^0.12.2",
     "react-native-vector-icons": "^4.2.0",
-    "react-native-web": "^0.0.97",
     "react-navigation": "1.0.0-beta.11",
     "react-redux": "^5.0.5",
     "redux-actions": "^2.0.3",
@@ -26,15 +26,14 @@
   },
   "devDependencies": {
     "@jonny/react-native-mock": "^0.3.3",
-    "@storybook/addon-storyshots": "^3.0.0",
-    "@storybook/react-native": "^3.0.1",
     "babel-jest": "20.0.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.5",
     "babel-preset-react-native": "1.9.2",
     "haul": "^1.0.0-beta.1",
     "jest": "20.0.4",
     "react-dom": "^15.5.4",
-    "react-test-renderer": "^15.5.4"
+    "react-test-renderer": "^15.5.4",
+    "@storybook/react-native": "^3.1.6"
   },
   "jest": {
     "setupFiles": [

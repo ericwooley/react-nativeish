@@ -10,13 +10,14 @@
     "enzyme": "^2.8.2",
     "jest": "^20.0.4",
     "prop-types": "^15.5.10",
-    "react-primitives": "^0.4.2"
+    "react-native": "0.45.1"
   },
   "devDependencies": {
     "babel-jest": "20.0.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.5",
     "babel-preset-react-native": "1.9.2",
-    "react": "^15.5.0",
-    "react-dom": "^15.5.0"
+    "react": "*",
+    "react-dom": "*",
+    "@storybook/react-native": "*"
   }
 }

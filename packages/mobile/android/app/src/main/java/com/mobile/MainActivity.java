@@ -1,4 +1,4 @@
-package com.ishmobile;
+package com.mobile;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "ishMobile";
+        return "mobile";
     }
 }

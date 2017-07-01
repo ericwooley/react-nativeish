@@ -1,4 +1,4 @@
-package com.ishmobile;
+package com.mobile;
 
 import android.app.Application;
 
