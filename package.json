@@ -1,13 +1,14 @@
 {
+  "scripts": {
+    "dev": "termax dev"
+  },
   "devDependencies": {
     "lerna": "^2.0.0-rc.5",
-    "pty.js": "^0.3.1",
     "redux-cli": "^1.9.0",
-    "shelljs": "^0.7.8",
-    "term.js": "0.0.7"
+    "shelljs": "^0.7.8"
   },
   "dependencies": {
-    "blessed": "^0.1.81",
+    "@tww/terminus-maximus": "^1.0.1",
     "chokidar": "^1.7.0"
   }
 }

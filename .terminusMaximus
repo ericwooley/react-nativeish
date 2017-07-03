@@ -1,0 +1,15 @@
+{
+  "errorHeight": 20,
+  "scripts": {
+    "dev": [
+      {
+        "label": "components->mobile",
+        "command": "node ./dev-scripts/bin/syncComponents.js ./packages/mobile/node_modules/react-native-components"
+      },
+      {
+        "label": "components->web",
+        "command": "node ./dev-scripts/bin/syncComponents.js ./packages/web/node_modules/react-native-components"
+      }
+    ]
+  }
+}
