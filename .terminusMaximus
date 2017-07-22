@@ -1,15 +1,21 @@
 {
   "errorHeight": 20,
   "scripts": {
-    "dev": [
-      {
-        "label": "components->mobile",
-        "command": "node ./dev-scripts/bin/syncComponents.js ./packages/mobile/node_modules/react-native-components"
-      },
-      {
-        "label": "components->web",
-        "command": "node ./dev-scripts/bin/syncComponents.js ./packages/web/node_modules/react-native-components"
-      }
-    ]
+    "dev": {
+      "commands": [
+        {
+          "label": "components->mobile",
+          "command": "node ./dev-scripts/bin/syncComponents.js ./packages/mobile/node_modules/react-native-components"
+        },
+        {
+          "label": "components->web",
+          "command": "node ./dev-scripts/bin/syncComponents.js ./packages/web/node_modules/react-native-components"
+        },
+        {
+          "label": "storybook", 
+          "command": "lerna run storybook --stream --parallel"
+        }
+      ]
+    }
   }
 }

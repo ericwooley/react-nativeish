@@ -13,9 +13,9 @@ function sync(event, filePath, skipTimeCheck) {
     console.log("event: ", event, "file:", filePath);
   }
   shelljs.exec(
-    "rsync -av --exclude='node_modules' " + componentsPath + " " + dest,
+    "rsync -av --exclude=node_modules package.json .* " + componentsPath + " " + dest,
     { async: true }
   );
 }
 sync(null, null, true);
-chokidar.watch(componentsPath, { ignored: /node_modules/ }).on("all", sync);
+chokidar.watch(componentsPath, { ignored: /node_modules|package.json|\.*/ }).on("all", sync);

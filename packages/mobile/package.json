@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "haul start --platform all",
+    "boot:ios": "react-native run-ios --no-packager",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "haul": "haul start",
@@ -27,14 +28,14 @@
   },
   "devDependencies": {
     "@jonny/react-native-mock": "^0.3.3",
+    "@storybook/react-native": "^3.1.6",
     "babel-jest": "20.0.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.5",
     "babel-preset-react-native": "1.9.2",
     "haul": "^1.0.0-beta.1",
     "jest": "20.0.4",
     "react-dom": "^15.5.4",
-    "react-test-renderer": "^15.5.4",
-    "@storybook/react-native": "^3.1.6"
+    "react-test-renderer": "^15.5.4"
   },
   "jest": {
     "setupFiles": [

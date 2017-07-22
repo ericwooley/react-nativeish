@@ -3,12 +3,13 @@
     "dev": "termax dev"
   },
   "devDependencies": {
+    "@tww/terminus-maximus": "file:../../../projects/thewooleyway/packages/terminus-maximus",
+    "chokidar": "^1.7.0",
     "lerna": "^2.0.0-rc.5",
     "redux-cli": "^1.9.0",
     "shelljs": "^0.7.8"
   },
   "dependencies": {
-    "@tww/terminus-maximus": "^1.0.1",
-    "chokidar": "^1.7.0"
+    "@tww/config": "^1.0.1"
   }
 }
