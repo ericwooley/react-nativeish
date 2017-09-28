@@ -25,7 +25,7 @@ Maximizing code reuse for Create React App and Create React Native App
 
 Dependencies
 ------------
-1. OSX with xcode
+1. OSX with xcode (if you want to develop for ios, though you could also use the expo app on an ios device)
 2. Node >= 6 (I would use nvm or n)
 3. Yarn >= 0.21.3
 4. Create React App
