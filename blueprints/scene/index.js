@@ -27,10 +27,10 @@ module.exports = {
   // before and after install hooks
   beforeInstall: function (options) {},
   afterInstall: function (options) {
-    var nameS = S(options.entity.name)
+    // var nameS = S(options.entity.name)
     // var camelCase = nameS.camelize()
-    var pascalCase = nameS.capitalize()
-    fs.appendFileSync(path.join(__dirname, '../../src/scenes/stories.js'), `import './${options.entity.name}/${options.entity.name}Scene.story'\n`)
-    prependFile.sync(path.join(__dirname, '../../src/scenes/index.js'), `import ${pascalCase} from './${options.entity.name}/${options.entity.name}Scene'\n`)
+    // var pascalCase = nameS.capitalize()
+    // fs.appendFileSync(path.join(__dirname, '../../src/scenes/stories.js'), `import './${options.entity.name}/${options.entity.name}Scene.story'\n`)
+    // prependFile.sync(path.join(__dirname, '../../src/scenes/index.js'), `import ${pascalCase} from './${options.entity.name}/${options.entity.name}Scene'\n`)
   }
 }

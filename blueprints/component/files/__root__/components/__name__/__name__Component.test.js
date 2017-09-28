@@ -1,3 +1,4 @@
+// These tests run in web mode. see -m for mobile version
 import React from 'react'
 import <%= pascalEntityName %> from './<%= camelEntityName %>Component'
 import {shallow} from 'enzyme'

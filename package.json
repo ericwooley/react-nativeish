@@ -1,150 +1,69 @@
 {
-  "name": "reactnativereduxstarterkit",
-  "version": "0.0.1",
+  "name": "react-nativish",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "build:web": "",
-    "build:ios": "",
-    "build:android": "",
-    "build:chrome": "",
-    "dev:ios": "react-native run-ios",
-    "dev:android": "react-native run-android",
-    "dev:web": "webpack-dev-server --port 3000 --config web/webpack.config.dev.js --inline --hot --colors",
-    "start": "npm run dev:ios",
-    "storybook:ios": "storybook start -p 7007",
-    "storybook:web": "start-storybook -p 9001 -c web/.storybook",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:update": "jest -u",
-    "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 6006"
-  },
-  "babel": {
-    "presets": [
-      "react-native-stage-0"
-    ],
-    "plugins": [
-      "transform-regenerator"
-    ]
-  },
-  "jest": {
-    "coverageThreshold": {
-      "global": {
-        "branches": 99,
-        "functions": 99,
-        "lines": 99,
-        "statements": 99
-      }
-    },
-    "collectCoverageFrom": [
-      "src/**/*.js*"
-    ],
-    "coveragePathIgnorePatterns": [
-      "node_modules/",
-      "blueprints/",
-      "build/",
-      "web/",
-      "__snapshots__/",
-      "src/services/network",
-      "src/containers/mockToggle/",
-      "story.js",
-      "src/redux/store.js",
-      "style.js",
-      "src/services/linkService"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/build/",
-      "<rootDir>/node_modules/",
-      "<rootDir>/blueprints/"
-    ],
-    "preset": "jest-react-native",
-    "setupFiles": [
-      "./test_config/setup.js"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(jest-)?react-native|react-navigation)"
-    ],
-    "globals": {
-      "__DEV__": true,
-      "__TEST__": true
-    },
-    "moduleNameMapper": {
-      "@kadira/react-native-storybook": "@kadira/storybook"
-    }
-  },
-  "eslintConfig": {
-    "extends": [
-      "standard",
-      "standard-react"
-    ],
-    "plugins": [
-      "jest"
-    ],
-    "env": {
-      "jest/globals": true
-    }
-  },
-  "dependencies": {
-    "axios": "^0.16.0",
-    "axios-mock-adapter": "^1.8.1",
-    "babel-polyfill": "^6.23.0",
-    "font-awesome": "^4.7.0",
-    "font-awesome-webpack": "^0.0.5-beta.2",
-    "prepend-file": "^1.3.1",
-    "prop-types": "^15.5.8",
-    "react": "^15.4.0",
-    "react-native": "^0.41.0",
-    "react-native-cli": "^2.0.1",
-    "react-native-elements": "^0.10.3",
-    "react-native-vector-icons": "^4.0.1",
-    "recompose": "^0.22.0",
-    "redux": "^3.6.0",
-    "redux-actions": "^2.0.1",
-    "redux-cli": "^1.9.0",
-    "redux-saga": "^0.14.4"
-  },
   "devDependencies": {
-    "@kadira/react-native-storybook": "^2.3.0",
-    "@kadira/storybook": "^2.21.0",
-    "@kadira/storyshots": "^2.1.0",
-    "babel-cli": "^6.14.0",
-    "babel-core": "^6.14.0",
-    "babel-eslint": "^6.1.2",
-    "babel-jest": "19.0.0",
-    "babel-loader": "^6.2.5",
-    "babel-plugin-module-resolver": "^2.7.0",
-    "babel-plugin-transform-regenerator": "^6.22.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react-native": "1.9.1",
-    "babel-preset-react-native-stage-0": "^1.0.0",
-    "chalk": "^1.1.3",
-    "enzyme": "^2.8.0",
-    "eslint": "^3.19.0",
-    "eslint-config-standard": "^7.1.0",
-    "eslint-config-standard-react": "^4.3.0",
-    "eslint-plugin-jest": "^19.0.1",
-    "eslint-plugin-jsx-a11y": "^2.2.0",
+    "@storybook/react-native": "^3.1.9",
+    "@tww/terminus-maximus": "^2.0.6",
+    "enzyme-adapter-react-16": "^1.0.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "jest-expo": "^21.0.0",
+    "prettier": "^1.5.3",
+    "react-native-scripts": "^1.5.0",
+    "react-test-renderer": "^16.0.0"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "lint": "eslint src",
+    "dev:web": "termax devweb",
+    "dev:mobile": "termax devmobile",
+    "start": "termax dev",
+    "start:mobile": "react-native-scripts start",
+    "eject:mobile": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "yarn lint && yarn test:mobile && CI=true yarn test:web",
+    "test:mobile": "jest -c .jest-native.json",
+    "start:web": "react-scripts start",
+    "build:web": "react-scripts build",
+    "test:web": "react-scripts test --env=jsdom ./src",
+    "storybook:mobile": "storybook start -p 7007 -c storybook",
+    "storybook:web": " start-storybook -p 9001 -c .storybook"
+  },
+  "pre-push": [
+    "test"
+  ],
+  "dependencies": {
+    "@storybook/react": "^3.1.9",
+    "chalk": "^2.0.1",
+    "enzyme": "^3.0.0",
+    "eslint": "^4.4.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-flow": "^1.0.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^6.10.3",
-    "eslint-plugin-standard": "^2.1.1",
-    "git-hooks": "^1.1.8",
-    "jest": "19.0.2",
-    "jest-react-native": "^18.0.0",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.3",
-    "react-dom": "^15.4.2",
-    "react-hot-loader": "2.0.0-alpha-4",
-    "react-native-mock": "^0.3.1",
-    "react-native-web": "0.0.70",
-    "react-navigation": "^1.0.0-beta.7",
-    "react-redux": "^5.0.3",
-    "react-test-renderer": "~15.4.1",
-    "redux-devtools-extension": "^2.13.0",
-    "remote-redux-devtools": "^0.5.7",
-    "shelljs": "^0.7.7",
-    "storyshots": "^3.2.2",
-    "string": "^3.3.3",
-    "webpack": "1.13.2",
-    "webpack-dev-server": "1.14.1"
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "expo": "^21.0.2",
+    "history": "^4.6.3",
+    "jest-enzyme": "^4.0.0",
+    "npm": "^5.3.0",
+    "pre-commit": "^1.2.2",
+    "prop-types": "^15.5.10",
+    "raf": "^3.3.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-21.0.2.tar.gz",
+    "react-native-web": "^0.1.0",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.1.2",
+    "react-router-redux": "next",
+    "react-scripts": "^1.0.14",
+    "redux": "^3.7.2"
   }
 }

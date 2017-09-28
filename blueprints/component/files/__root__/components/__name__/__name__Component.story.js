@@ -1,7 +1,8 @@
 import React from 'react'
-import { storiesOf, action } from '@kadira/react-native-storybook'
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import <%= pascalEntityName %> from './<%= camelEntityName %>Component'
-storiesOf('<%= pascalEntityName %>', module)
+storiesOf('components/<%= pascalEntityName %>', module)
   .add('with text', () => (
     <<%= pascalEntityName %> onClick={action('clicked')}>
       Hello Button

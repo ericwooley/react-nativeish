@@ -1,3 +1,4 @@
+// Copy this file and name it <%= camelEntityName %>Component.native.js if you need a native only version
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import {

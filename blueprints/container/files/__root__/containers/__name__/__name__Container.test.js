@@ -1,3 +1,4 @@
+// Copy this and add name it <%= camelEntityName %>Container.test-m.js for a mobile version of the test
 import {mapStateToProps, propsMapping} from './<%= camelEntityName %>Container'
 describe('<%= camelEntityName %> container', () => {
   it('should map state to props', () => {

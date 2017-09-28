@@ -1,23 +1,18 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
-import {Stars} from '../../containers'
-import styles from './<%= camelEntityName %>Scene.style'
-import {SceneWrapper} from '../'
+import PropTypes from 'prop-types'
+import { Button } from 'react-native'
+import { withRouter } from 'react-router-dom'
 class <%= pascalEntityName %>Scene extends React.Component {
   render () {
     return (
-      <SceneWrapper>
-        <View style={styles.container}>
-          <Stars />
-        </View>
-      </SceneWrapper>
+      <Button
+        onPress={() => this.props.history.push('/notifications')}
+        title='Go to notifications'
+      />
     )
   }
 }
-
-<%= pascalEntityName %>Scene.propTypes = {
+HomeScreen.propTypes = {
+  history: PropTypes.any
 }
-<%= pascalEntityName %>Scene.navigationOptions = {
-  title: 'Github stars'
-}
-export default <%= pascalEntityName %>Scene
+export default withRouter(<%= pascalEntityName %>Scene)

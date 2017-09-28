@@ -25,6 +25,6 @@ module.exports = {
   // before and after install hooks
   beforeInstall: function (options) {},
   afterInstall: function (options) {
-    console.warn(chalk.red('Make sure you add your saga to the root saga in src/redux/sagas/index.js'))
+    console.warn(chalk.red('Make sure you add your saga to the root saga in src/sagas/index.js'))
   }
 }

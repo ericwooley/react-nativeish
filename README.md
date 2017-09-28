@@ -1,11 +1,21 @@
-React Native...ish
+React Native...ish V2
 ==================================
+Maximizing code reuse for Create React App and Create React Native App
+-------------------------------------------------------------------
 
-![runs everywhere](./docs/assets/runs-everywhere.gif)
+### Quick Feature Compare
+* Architecture that supports code sharing between [CRA](https://github.com/facebookincubator/create-react-app) and [CRNA](https://github.com/react-community/create-react-native-app)
+* [React Navigation for mobile](https://reactnavigation.org/) & [React Router 4 for web](https://reacttraining.com/react-router/)
+* Storybook for web and for mobile
+* jest
+* blueprints via [redux-cli](https://github.com/SpencerCDixon/redux-cli)
+  1. generates code based on the files in `blueprints/`
+* Intended for use with redux-sagas, but they are not installed by default (*blueprints for sagas are installed.)
+* jest with enzyme
 
-## Quick Links
+### Quick Links
 1. [Dependencies](#dependencies) √ 
-2. [Onboarding](#onboarding) √
+2. [OnBoarding](#onboarding) √
   * [Libraries](#libraries) √
 3. [Development](#developing) √
 4. [Deployment](#deployment) ¬
@@ -18,64 +28,50 @@ Dependencies
 1. OSX with xcode
 2. Node >= 6 (I would use nvm or n)
 3. Yarn >= 0.21.3
+4. Create React App
+5. Create React Native App
 
-Onboarding
+OnBoarding
 ----------
 Make sure you understand react/redux/redux-sagas. (Links in the libraries section)
 
 Take a quick look at the directory structure. (explanations follow)
 ### Directory Structure
 ```bash
-├── android                                           # Android build project
-├── app.json
-├── blueprints                                        # Blue print folders
-│   ├── component                                     # Blue print for component `redux g component <component name>`
-│   ├── container                                     # Blue print for container `redux g container <container name>`
-│   ├── saga                                          # Blue print for saga `redux g saga <saga name>`
-│   └── scene                                         # Blue print for scenes `redux g scene <scene name>`
-├── index.android.js                                  # entry point for android
-├── index.ios.js                                      # entry point for ios
-├── index.web.js                                      # entry point for web
-├── ios                                               # IOS build project
-├── jsconfig.json                                     # VSCODE JSConfig Project
-├── package.json                                      # NPM package file for build scripts.
-├── src                                               # app src file
-│   ├── __tests__                                     # root tests folder
-│   │   ├── __snapshots__                             # storyshots snapshots folder
-│   │   └── storybook.test.js                         # Initialization for storyshots
-│   ├── assets                                        # Images etc..
-│   ├── components                                    # React Components
-│   │   ├── index.js                                  # exports all components
-│   │   └── <component name>                          # root folder for component
-│   │       ├── __tests__                             # component test folder
-│   │       │   └── <component name>Component.test.js # component test file
-│   │       ├── <component name>Component.js          # component file
-│   │       └── <component name>Component.story.js    # component story file
-│   ├── redux                                         # Redux files
-│   │   ├── reducers                                  # redux reducers
-│   │   │   ├── __tests__                             # tests for reducers
-│   │   │   │   └── <reducer name>Reducer.test.js     # test file for reducer
-│   │   │   └── <reducer name>Reducer.js              # redux reducer
-│   │   ├── sagas                                     # redux saga files
-│   │   │   ├── index.js                              # exports all saga files.
-│   │   │   └── <saga name>                           # Saga container
-│   │   │       ├── __tests__
-│   │   │       │   └── <saga name>Saga.test.js       # Saga test file
-│   │   │       └── <saga name>Saga.js                # Saga
-│   │   └── store.js                                  # creates and configures the redux store
-│   ├── scenes                                        # Scenes (maps to routes, similar to views)
-│   │   ├── <scene name>Scene.js                      # Scene component, should only compose containers
-│   │   │   ├── <scene name>Scene.js                  # Test files for scenes
-│   │   └── index.js                                  # Exports all scenes
-│   └── stories.js                                    # Imports and exports all other stories. 
-│   ├── services
-│   │   └── <service name>Service
-│   │       ├── <service name>Service.js
-│   │       └── <service name>Service.test.js
-├── storybook                                         # Native storybook config
-├── test_config                                       # Setup files for jest
-├── web                                               # Web config files for react-native-web
-└── yarn.lock                                         # Locks all libraries in place. 
+├── App.js                                    # Entry point for exp
+├── App.test-m.js                             # unit test for Expo. All mobile tests end with .test-m.js to differentiate them from the mobile versions
+├── README.md
+├── __mocks__                                 # Mocks for testing
+├── app.json                                  # React native and expo file used for app settings, look at the expo docs for more about this
+├── blueprints                                # Blueprints folder, contains components, sagas, etc...
+├── combined                                  # something expo creates?
+├── package.json                      
+├── public                                    # CRA webpack public serve file
+├── src
+│   ├── App.css                               # css file for CRA
+│   ├── App.js                                # basic App for CRA, import by index.js
+│   ├── App.test.js                           # Test for app for web, all web tests end in .test.js (not .test-m.js)
+│   ├── components                            # components, all components should strive to be reusable
+│   │   └── Button        
+│   │       ├── index.js                      # default button for web (or native, if there is nothing native specific in it)
+│   │       ├── index.native.js               # will be imported in mobile, instead of index.js. Use this pattern when you need components to be different for each. You should make them have the same api though.
+│   │       ├── index.story.js                # storybook for native
+│   │       └── index.story.native.js         # storybook for mobile
+│   ├── constants                             # app config, different for mobile and native
+│   ├── index.css
+│   ├── index.js                              # Entry point for CRA, different than expo, expo expects it to be at the root.
+│   ├── logo.svg
+│   ├── navigation                            # Routes and navigation setup, different for mobile and native
+│   ├── reducers                              # Basic redux reducer setups
+│   ├── registerServiceWorker.js              # used by CRA to cache files
+│   ├── scenes                                # Screens (routes) which are always different for native and mobile
+│   ├── setupTests.js                         # test setup file
+│   └── store                                 # stores that are different for mobile and native, so that react-router can be effectively synced.
+│       ├── configure-store.js
+│       └── configure-store.native.js
+└── storybook                                 # storybook folder
+    ├── addons.js
+    ├── index.js
 ```
 * Components
   Components are like the View in MVC. It should only accept props, and output JSX, with generalized callback props (onClick, onHover, onSomethingCustom, etc...). Think of components like your own personal html framework, these shouldn't know anything about the state of the app.
@@ -153,19 +149,18 @@ Development
   * Make sure your editor uses the eslint linter.
   
 2. Development commands
-  * `yarn dev:ios`: run the react-native app in IOS
-  * `yarn dev:android`: run the react-native app in ANDROID
-  * `yarn dev:web`: run the react-native app in WEB
-    You can open chrom://extensions, enable developer mode, and load web/chrome-ext as an unpacked extension. It should load the webpack build server just like developing in web.
+  * `yarn start`: Runs all processes in terminus-maximus. Open your browser window to localhost:3000 for web, open localhost:9001 for web storybook, localhost:7007 for storybook mobile controller, and open your expo app for developing natively. (note that storybook won't be able to connect from non localhost simulators).
+
+  Also note that the QR code in the terminal is not printed correctly. Try using the expo app, or running `exp start` outside of npm run start to get the qr code to load it onto your phone or simulator
 
 3. Development Workflow 
-  * Start by identifying which components you need and start react-storybook `yarn storybook:web` and open [http://localhost:9001/](http://localhost:9001/)
+  * Start by identifying which components you need and start react-storybook `yarn start` and open [http://localhost:9001/](http://localhost:9001/)
     1. Develop the component, and create comprehensive tests.
 
   * Create containers to wrap them to state, as needed (which can still be done via creating stories in storybook)
     1. This is also a good time to develop any sagas or reducers you need.
     
-  * Kill storybook and run `yarn dev:web` and open [http://localhost:3000/](http://localhost:3000/)
+  * open [http://localhost:3000/](http://localhost:3000/)
     1. Create or open the view you want to develop, navigate there in your app, and happy developing!
 
   * Once you are happy with the way it looks in web, open it in ios and android, to make sure you didn't miss/break something.
@@ -196,16 +191,3 @@ generating.
 * scene - generates all test/story/code boilerplate needed for a scene. All files are placed in src/scene.
 
   - EG: `redux g scene test`
-
-
-Deployment
-----------
-TODO
-
-References
-----------
-TODO
-
-Notes
------
-Currently we are using react-native 0.41.x because 0.43.x depends on an [alpha version of react](https://github.com/facebook/react-native/issues/13314). Once that is resolved, we will upgrade to 0.43.x. 0.42.x is has some severe networking bugs.

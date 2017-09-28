@@ -1,4 +1,5 @@
 {
-  "name": "reactnativereduxstarterkit",
-  "displayName": "reactnativereduxstarterkit"
+  "expo": {
+    "sdkVersion": "21.0.0"
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "preset": "jest-expo",
+  "testMatch": ["**/*/*.test-m.js"],
+  "moduleNameMapper": {
+    "./storybook": "./__mocks__/storybookui.js"
+  },
+  "moduleFileExtensions": ["native.js", "js"],
+  "testPathIgnorePatterns": ["node_modules/", "<rootDir>/blueprints/"]
+}

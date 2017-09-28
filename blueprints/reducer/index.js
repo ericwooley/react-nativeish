@@ -25,6 +25,6 @@ module.exports = {
   // before and after install hooks
   beforeInstall: function (options) {},
   afterInstall: function (options) {
-    console.warn(chalk.red('Make sure you add your reducer to the root reducer in src/redux/reducers/index.js'))
+    console.warn(chalk.red('Make sure you add your reducer to the root reducer in src/reducers/index.js'))
   }
 }
