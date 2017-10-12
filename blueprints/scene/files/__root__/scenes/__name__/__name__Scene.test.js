@@ -7,7 +7,6 @@ it('should render', () => {
   expect(<%= camelEntityName %>Scene.length).toBe(1)
 })
 
-
 // You could use something like this to test onClick handlers
 // it('should call trigger stars naviation', () => {
 //   const starsButtonMock = jest.fn()

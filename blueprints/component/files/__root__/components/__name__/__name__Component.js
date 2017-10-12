@@ -1,9 +1,7 @@
 // Copy this file and name it <%= camelEntityName %>Component.native.js if you need a native only version
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
-import {
-  Button
-} from 'react-native-elements'
+import PropTypes from 'prop-types'
+import { Button, View, StyleSheet } from 'react-native'
 export default function <%= pascalEntityName %> (props) {
   const starCountText = props.starCount < 1 ? 'Get Stars' : props.starCount + ' stars'
   const icon = props.starCount < 1 ? 'star-o' : 'star'
@@ -18,8 +16,8 @@ export default function <%= pascalEntityName %> (props) {
 }
 
 <%= pascalEntityName %>.propTypes = {
-  starCount: React.PropTypes.number,
-  onPress: React.PropTypes.func
+  starCount: PropTypes.number,
+  onPress: PropTypes.func
 }
 
 const styles = StyleSheet.create({

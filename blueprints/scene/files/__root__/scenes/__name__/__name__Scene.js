@@ -12,7 +12,7 @@ class <%= pascalEntityName %>Scene extends React.Component {
     )
   }
 }
-HomeScreen.propTypes = {
+<%= pascalEntityName %>Scene.propTypes = {
   history: PropTypes.any
 }
 export default withRouter(<%= pascalEntityName %>Scene)

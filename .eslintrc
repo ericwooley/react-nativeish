@@ -10,6 +10,7 @@
     "describe": true,
     "it": true,
     "fetch": true,
-    "expect": true
+    "expect": true,
+    "jest": true
   }
 }

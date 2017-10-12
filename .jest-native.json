@@ -4,6 +4,7 @@
   "moduleNameMapper": {
     "./storybook": "./__mocks__/storybookui.js"
   },
+  "setupFiles": ["./.jest-mobile-setup.js"],
   "moduleFileExtensions": ["native.js", "js"],
   "testPathIgnorePatterns": ["node_modules/", "<rootDir>/blueprints/"]
 }

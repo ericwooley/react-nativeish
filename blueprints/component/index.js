@@ -26,10 +26,18 @@ module.exports = {
   // before and after install hooks
   beforeInstall: function (options) {},
   afterInstall: function (options) {
-    // var nameS = S(options.entity.name)
+    var nameS = S(options.entity.name)
     // var camelCase = nameS.camelize()
-    // var pascalCase = nameS.capitalize()
-    // fs.appendFileSync(path.join(__dirname, '../../src/components/stories.js'), `import './${options.entity.name}/${options.entity.name}Component.story'\n`)
-    // fs.appendFileSync(path.join(__dirname, '../../src/components/index.js'), `export {default as ${pascalCase}} from './${options.entity.name}/${options.entity.name}Component'\n`)
+    var pascalCase = nameS.capitalize()
+    fs.appendFileSync(
+      path.join(__dirname, '../../src/components/stories.js'),
+      `import './${options.entity.name}/${options.entity
+        .name}Component.story'\n`
+    )
+    fs.appendFileSync(
+      path.join(__dirname, '../../src/components/index.js'),
+      `export {default as ${pascalCase}} from './${options.entity
+        .name}/${options.entity.name}Component'\n`
+    )
   }
 }
