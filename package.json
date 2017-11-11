@@ -3,69 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "@storybook/react-native": "^3.1.9",
-    "@tww/terminus-maximus": "^2.0.6",
-    "enzyme-adapter-react-16": "^1.0.0",
-    "eslint-config-prettier": "^2.3.0",
-    "eslint-plugin-jest": "^21.2.0",
-    "jest-expo": "^21.0.0",
-    "prepend-file": "^1.3.1",
-    "prettier": "^1.5.3",
-    "react-native-scripts": "^1.5.0",
-    "react-test-renderer": "^16.0.0",
-    "string": "^3.3.3"
+    "lerna": "^2.1.0"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "lint": "eslint src",
-    "dev:web": "termax devweb",
-    "dev:mobile": "termax devmobile",
-    "start": "termax dev",
-    "start:mobile": "react-native-scripts start",
-    "eject:mobile": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "yarn lint && yarn test:mobile && CI=true yarn test:web",
-    "test:mobile": "jest -c .jest-native.json",
-    "start:web": "react-scripts start",
-    "build:web": "react-scripts build",
-    "test:web": "react-scripts test --env=jsdom ./src",
-    "storybook:mobile": "storybook start -p 7007 -c storybook",
-    "storybook:web": " start-storybook -p 9001 -c .storybook"
+    "postinstall": "lerna bootstrap"
   },
-  "pre-push": [
-    "test"
-  ],
   "dependencies": {
-    "@storybook/react": "^3.1.9",
-    "chalk": "^2.0.1",
-    "enzyme": "^3.0.0",
-    "eslint": "^4.4.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-config-standard-flow": "^1.0.1",
-    "eslint-config-standard-react": "^5.0.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.1.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "expo": "^21.0.2",
-    "history": "^4.6.3",
-    "jest-enzyme": "^4.0.0",
-    "npm": "^5.3.0",
-    "pre-commit": "^1.2.2",
-    "prop-types": "^15.5.10",
-    "raf": "^3.3.2",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-21.0.2.tar.gz",
-    "react-native-web": "^0.1.0",
-    "react-navigation": "^1.0.0-beta.11",
-    "react-redux": "^5.0.5",
-    "react-router": "^4.1.2",
-    "react-router-dom": "^4.1.2",
-    "react-router-redux": "next",
-    "react-scripts": "^1.0.14",
-    "redux": "^3.7.2"
+    "react-native": "^0.50.3"
   }
 }

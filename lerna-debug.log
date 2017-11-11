@@ -1,0 +1,310 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /Users/ericwooley/projects/react-nativeish
+3 info version 2.5.1
+4 silly existsSync /Users/ericwooley/projects/react-nativeish/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: 'yarn',
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: 'network:42424' }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 3 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall storybook-mobile
+12 silly storybook-mobile
+13 silly runScript preinstall storybook-web
+14 silly storybook-web
+15 silly runScript preinstall ui
+16 silly ui
+17 silly hasDependencyInstalled storybook-mobile react-native-scripts
+18 silly dependencyIsSatisfied [ 'react-native-scripts',
+18 silly dependencyIsSatisfied   '1.7.0',
+18 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+19 verbose dependencyIsSatisfied react-native-scripts true
+20 silly hasDependencyInstalled storybook-mobile jest-expo
+21 silly dependencyIsSatisfied [ 'jest-expo',
+21 silly dependencyIsSatisfied   '^22.0.0',
+21 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+22 verbose dependencyIsSatisfied jest-expo true
+23 silly hasDependencyInstalled storybook-mobile react-test-renderer
+24 silly dependencyIsSatisfied [ 'react-test-renderer',
+24 silly dependencyIsSatisfied   '16.0.0-beta.5',
+24 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+25 verbose dependencyIsSatisfied react-test-renderer true
+26 silly hasDependencyInstalled storybook-mobile @storybook/react-native
+27 silly dependencyIsSatisfied [ '@storybook/react-native',
+27 silly dependencyIsSatisfied   '^3.2.15',
+27 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+28 verbose dependencyIsSatisfied @storybook/react-native true
+29 silly hasDependencyInstalled storybook-mobile @storybook/addon-actions
+30 silly dependencyIsSatisfied [ '@storybook/addon-actions',
+30 silly dependencyIsSatisfied   '^3.2.15',
+30 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+31 verbose dependencyIsSatisfied @storybook/addon-actions true
+32 silly hasDependencyInstalled storybook-web @storybook/addon-actions
+33 silly dependencyIsSatisfied [ '@storybook/addon-actions',
+33 silly dependencyIsSatisfied   '^3.2.15',
+33 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+34 verbose dependencyIsSatisfied @storybook/addon-actions true
+35 silly hasDependencyInstalled storybook-mobile @storybook/addon-links
+36 silly dependencyIsSatisfied [ '@storybook/addon-links',
+36 silly dependencyIsSatisfied   '^3.2.15',
+36 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+37 verbose dependencyIsSatisfied @storybook/addon-links true
+38 silly hasDependencyInstalled storybook-web @storybook/addon-links
+39 silly dependencyIsSatisfied [ '@storybook/addon-links',
+39 silly dependencyIsSatisfied   '^3.2.15',
+39 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+40 verbose dependencyIsSatisfied @storybook/addon-links true
+41 silly hasDependencyInstalled storybook-mobile react-dom
+42 silly dependencyIsSatisfied [ 'react-dom',
+42 silly dependencyIsSatisfied   '16.0.0-beta.5',
+42 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+43 verbose dependencyIsSatisfied react-dom true
+44 silly hasDependencyInstalled storybook-web react-dom
+45 silly dependencyIsSatisfied [ 'react-dom',
+45 silly dependencyIsSatisfied   '^16.1.0',
+45 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+46 verbose dependencyIsSatisfied react-dom true
+47 silly hasDependencyInstalled ui react-dom
+48 silly dependencyIsSatisfied [ 'react-dom',
+48 silly dependencyIsSatisfied   '^16.1.0',
+48 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/ui/node_modules' ]
+49 verbose dependencyIsSatisfied react-dom true
+50 silly hasDependencyInstalled storybook-mobile prop-types
+51 silly dependencyIsSatisfied [ 'prop-types',
+51 silly dependencyIsSatisfied   '^15.6.0',
+51 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+52 verbose dependencyIsSatisfied prop-types true
+53 silly hasDependencyInstalled storybook-mobile expo
+54 silly dependencyIsSatisfied [ 'expo',
+54 silly dependencyIsSatisfied   '^22.0.2',
+54 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+55 verbose dependencyIsSatisfied expo true
+56 silly hasDependencyInstalled storybook-mobile react
+57 silly dependencyIsSatisfied [ 'react',
+57 silly dependencyIsSatisfied   '16.0.0-beta.5',
+57 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+58 verbose dependencyIsSatisfied react true
+59 silly hasDependencyInstalled storybook-web react
+60 silly dependencyIsSatisfied [ 'react',
+60 silly dependencyIsSatisfied   '^16.1.0',
+60 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+61 verbose dependencyIsSatisfied react true
+62 silly hasDependencyInstalled ui react
+63 silly dependencyIsSatisfied [ 'react',
+63 silly dependencyIsSatisfied   '^16.1.0',
+63 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/ui/node_modules' ]
+64 verbose dependencyIsSatisfied react true
+65 silly hasDependencyInstalled storybook-mobile react-native
+66 silly dependencyIsSatisfied [ 'react-native',
+66 silly dependencyIsSatisfied   '^0.49.5',
+66 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-mobile/node_modules' ]
+67 verbose dependencyIsSatisfied react-native true
+68 silly hasDependencyInstalled storybook-web @types/jest
+69 silly dependencyIsSatisfied [ '@types/jest',
+69 silly dependencyIsSatisfied   '^21.1.6',
+69 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+70 verbose dependencyIsSatisfied @types/jest true
+71 silly hasDependencyInstalled ui @types/jest
+72 silly dependencyIsSatisfied [ '@types/jest',
+72 silly dependencyIsSatisfied   '^21.1.6',
+72 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/ui/node_modules' ]
+73 verbose dependencyIsSatisfied @types/jest true
+74 silly hasDependencyInstalled storybook-web @types/node
+75 silly dependencyIsSatisfied [ '@types/node',
+75 silly dependencyIsSatisfied   '^8.0.51',
+75 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+76 verbose dependencyIsSatisfied @types/node true
+77 silly hasDependencyInstalled storybook-web @types/react
+78 silly dependencyIsSatisfied [ '@types/react',
+78 silly dependencyIsSatisfied   '^16.0.22',
+78 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+79 verbose dependencyIsSatisfied @types/react true
+80 silly hasDependencyInstalled ui @types/react
+81 silly dependencyIsSatisfied [ '@types/react',
+81 silly dependencyIsSatisfied   '^16.0.22',
+81 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/ui/node_modules' ]
+82 verbose dependencyIsSatisfied @types/react true
+83 silly hasDependencyInstalled storybook-web @types/react-dom
+84 silly dependencyIsSatisfied [ '@types/react-dom',
+84 silly dependencyIsSatisfied   '^16.0.3',
+84 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+85 verbose dependencyIsSatisfied @types/react-dom true
+86 silly hasDependencyInstalled ui @types/react-dom
+87 silly dependencyIsSatisfied [ '@types/react-dom',
+87 silly dependencyIsSatisfied   '^16.0.3',
+87 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/ui/node_modules' ]
+88 verbose dependencyIsSatisfied @types/react-dom true
+89 silly hasDependencyInstalled storybook-web @storybook/react
+90 silly dependencyIsSatisfied [ '@storybook/react',
+90 silly dependencyIsSatisfied   '^3.2.15',
+90 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+91 verbose dependencyIsSatisfied @storybook/react true
+92 silly hasDependencyInstalled storybook-web react-scripts-ts
+93 silly dependencyIsSatisfied [ 'react-scripts-ts',
+93 silly dependencyIsSatisfied   '2.8.0',
+93 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/storybook-web/node_modules' ]
+94 verbose dependencyIsSatisfied react-scripts-ts true
+95 silly hasDependencyInstalled ui react-scripts-ts
+96 silly dependencyIsSatisfied [ 'react-scripts-ts',
+96 silly dependencyIsSatisfied   '2.8.0',
+96 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/ui/node_modules' ]
+97 verbose dependencyIsSatisfied react-scripts-ts true
+98 silly hasDependencyInstalled ui @types/react-native
+99 silly dependencyIsSatisfied [ '@types/react-native',
+99 silly dependencyIsSatisfied   '^0.50.2',
+99 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/ui/node_modules' ]
+100 verbose dependencyIsSatisfied @types/react-native true
+101 silly hasDependencyInstalled ui react-native-web
+102 silly dependencyIsSatisfied [ 'react-native-web',
+102 silly dependencyIsSatisfied   '^0.1.13',
+102 silly dependencyIsSatisfied   '/Users/ericwooley/projects/react-nativeish/packages/ui/node_modules' ]
+103 verbose dependencyIsSatisfied react-native-web true
+104 silly root dependencies []
+105 silly leaf dependencies {
+105 silly leaf dependencies   "storybook-mobile": [
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-native-scripts@1.7.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "jest-expo@^22.0.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-test-renderer@16.0.0-beta.5",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@storybook/react-native@^3.2.15",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@storybook/addon-actions@^3.2.15",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@storybook/addon-links@^3.2.15",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-dom@16.0.0-beta.5",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "prop-types@^15.6.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "expo@^22.0.2",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react@16.0.0-beta.5",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-native@^0.49.5",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     }
+105 silly leaf dependencies   ],
+105 silly leaf dependencies   "storybook-web": [
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@storybook/addon-actions@^3.2.15",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@storybook/addon-links@^3.2.15",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-dom@^16.1.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react@^16.1.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@types/jest@^21.1.6",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@types/node@^8.0.51",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@types/react@^16.0.22",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@types/react-dom@^16.0.3",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@storybook/react@^3.2.15",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-scripts-ts@2.8.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     }
+105 silly leaf dependencies   ],
+105 silly leaf dependencies   "ui": [
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-dom@^16.1.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react@^16.1.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@types/jest@^21.1.6",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@types/react@^16.0.22",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@types/react-dom@^16.0.3",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-scripts-ts@2.8.0",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "@types/react-native@^0.50.2",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     },
+105 silly leaf dependencies     {
+105 silly leaf dependencies       "dependency": "react-native-web@^0.1.13",
+105 silly leaf dependencies       "isSatisfied": true
+105 silly leaf dependencies     }
+105 silly leaf dependencies   ]
+105 silly leaf dependencies }
+106 info Symlinking packages and binaries
+107 silly packageActions finished storybook-mobile
+108 silly packageActions finished storybook-web
+109 silly packageActions finished ui
+110 info lifecycle postinstall
+111 silly runScript postinstall storybook-mobile
+112 silly storybook-mobile
+113 silly runScript postinstall storybook-web
+114 silly storybook-web
+115 silly runScript postinstall ui
+116 silly runScriptInDir postinstall [] ui
+117 silly getExecOpts { cwd: '/Users/ericwooley/projects/react-nativeish/packages/ui' }
+118 silly ui
+119 error execute Error occured with 'ui' while running 'npm run postinstall'
+120 error npm run postinstall [ui] Output from stdout:
+121 error npm run postinstall [ui] Output from stderr:
+122 error execute Error occured with 'ui' while running 'npm run postinstall'
